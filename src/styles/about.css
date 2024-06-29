@@ -1,0 +1,70 @@
+.about-me {
+    background: #151515;
+    padding: 4em 2em;
+    text-align: center;
+    position: relative;
+    z-index: -1;
+    color: #fff;
+}
+
+.heading-text {
+    position: relative;
+    background: inherit;
+    padding: 1em 0;
+}
+
+.heading-text:before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #312f2f;
+    border-radius: 3px;
+}
+
+.heading-5-a {
+    font-size: 3em;
+    margin: .3em 0 0;
+    letter-spacing: 1px;
+    color: #fff;
+    position: relative;
+    font-family: Quicksand, sans-serif;
+}
+
+.heading-5-a:before {
+    content: "";
+    position: absolute;
+    bottom: -1.5em;
+    left: 50%;
+    top: 70px;
+    width: 2px;
+    height: 1em;
+    background: rgb(98, 1, 1);
+    border-radius: 3px;
+}
+
+.about-me-text {
+    border: 3px solid rgb(27, 27, 37);
+    border-bottom: none;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.para-5-a {
+    margin-top: 6em;
+    font-size: 15px;
+    font-family: Quicksand, sans-serif;
+    font-weight: 100;
+}
+
+.para-5-a:before {
+    content: "";
+    position: absolute;
+    background-color: #312f2f;
+    width: 2px;
+    left: 50%;
+    top: 107%;
+    height: 3.3em;
+}
