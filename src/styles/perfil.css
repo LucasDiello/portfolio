@@ -142,4 +142,22 @@
         animation-timing-function: linear;
         animation-iteration-count: infinite;
     }
+
+    .content-perfil>h1 {
+        font-size: 3em;
+    }
+
+    .content-perfil>h3 {
+        font-size: 11px;
+        margin-bottom: 12px;
+    }
+
+    .about-me-text {
+        margin: 15px 0 0;
+        padding: 0 10px;
+    }
+
+    .abilities > h1 {
+        font-size: 2em !important;
+    }
 }

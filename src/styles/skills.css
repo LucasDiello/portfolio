@@ -1,0 +1,129 @@
+.container-skills {
+  background: #101010;
+  text-align: center;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  flex-direction: column;
+}
+
+.container-skills > div > h1 {
+  font-size: 3em;
+  margin-left: 20px;
+  margin-right: 80px;
+  font-family: Quicksand, sans-serif;
+}
+
+.container-skills > div > h1 > span {
+  color: #620101;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.content-skills {
+    position: relative;
+    text-align: center;
+    background-color: #151515;
+}
+
+.list-skills {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.abilities-using {
+    font-family: Anton, sans-serif;
+    display: flex;
+    position: relative;
+    font-size: 17px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    max-width: 60em;
+    height: 10vh;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.abilities-using:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    width: 2px;
+    height: 50px;
+    background: #312f2f;
+    border-radius: 3px;
+}
+
+.abilities-using>p {
+    border-bottom: 2px solid #312f2f;
+}
+
+.abilities-using:after {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 2px;
+    height: 40px;
+    background: rgb(98, 1, 1);
+    border-radius: 3px;
+}
+
+.list-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 80px;
+    max-width: 9em;
+    margin-bottom: 100px;
+}
+
+.list-content>div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #312f2f;
+    background-color: #111;
+    border-radius: 4px;
+    margin: 10px;
+    position: relative;
+    transition: 2s;
+    color: #bbbbe0;
+}
+
+.list-content>div:hover {
+    border: 1px solid #620101;
+    transition: 1s;
+    
+}
+
+.list-content>div:not(:hover) {
+    transition: border .5s ease .4s;
+}
+
+.list-content:after {
+    content: "";
+    position: absolute;
+    top: 85%;
+    width: 80%;
+    border: 3px solid rgb(27, 27, 37);
+    border-top: none;
+    height: 90px;
+    border-radius: 3px;
+}
+
+.list-content>div>span>i {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -4,6 +4,8 @@ import About from './routes/About'
 import Perfil from './routes/Perfil'
 import Projects from './routes/Projects'
 import { ProjectsContent } from './routes/ProjectsContent'
+import Skills from './routes/Skills'
+import SkillsContent from './routes/SkillsContent'
 
 function App() {
 
@@ -61,6 +63,8 @@ function App() {
         <About />
         <Projects />
         <ProjectsContent />
+        <Skills />
+        <SkillsContent />
       </div>
   )
 }
