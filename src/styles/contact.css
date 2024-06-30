@@ -1,0 +1,14 @@
+@media (min-width: 1024px) {
+    .lg\:h-\[50vh\] {
+        height: 50vh;
+    }
+}
+
+.contact-me-image {
+    background-image: url(../assets/mapa-ba83185c.jpg);
+    position: absolute;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    opacity: 6%;
+}

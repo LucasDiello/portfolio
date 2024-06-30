@@ -6,6 +6,7 @@ import Projects from './routes/Projects'
 import { ProjectsContent } from './routes/ProjectsContent'
 import Skills from './routes/Skills'
 import SkillsContent from './routes/SkillsContent'
+import Contact from './routes/Contact'
 
 function App() {
 
@@ -17,7 +18,6 @@ function App() {
           el.classList.add('show')
         } else {
           el.classList.remove('show')
-          console.log('hide')
         }
       })
     })
@@ -34,7 +34,6 @@ function App() {
         } else {
           el.classList.remove('show-projects')
           el.classList.add('hidd-projects')
-          console.log('hide')
         }
       })
             
@@ -65,6 +64,7 @@ function App() {
         <ProjectsContent />
         <Skills />
         <SkillsContent />
+        <Contact />
       </div>
   )
 }
