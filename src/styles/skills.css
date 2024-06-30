@@ -24,6 +24,7 @@
 
 .content-skills {
     position: relative;
+    z-index: 100;
     text-align: center;
     background-color: #151515;
 }
@@ -106,7 +107,7 @@
     
 }
 
-.list-content>div:not(:hover) {
+.list-content > div:not(:hover) {
     transition: border .5s ease .4s;
 }
 

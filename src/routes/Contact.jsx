@@ -7,7 +7,7 @@ const Contact = () => {
     text-gray-200 font-sans font-thin'>
         <div class="Toastify"></div>
         <div class="contact-me-image  lg:h-[50vh] h-full"></div>
-        <div class="h-full flex flex-wrap justify-center items-center">
+        <div class="h-full p-10 lg:p-0 flex flex-wrap justify-center items-center">
             <div class="lg:mr-10">
                 <h1>Entre em <span class="text-[#93b0c6] font-bold">Contato!</span></h1>
                 <p class="text-sm">caso queira entrar em contato, me envie um email:</p>

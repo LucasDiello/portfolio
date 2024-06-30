@@ -7,6 +7,7 @@ import { ProjectsContent } from './routes/ProjectsContent'
 import Skills from './routes/Skills'
 import SkillsContent from './routes/SkillsContent'
 import Contact from './routes/Contact'
+import Footer from './routes/Footer'
 
 function App() {
 
@@ -65,6 +66,7 @@ function App() {
         <Skills />
         <SkillsContent />
         <Contact />
+        <Footer />
       </div>
   )
 }
