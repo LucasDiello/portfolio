@@ -4,7 +4,7 @@ import '../styles/contact.css'
 const Contact = () => {
   return (
     <section className='lg:h-[50vh] bg-black flex justify-center items-center
-    text-gray-200 font-sans font-thin'>
+    text-gray-200 font-sans font-thin' id='contact'>
         <div class="Toastify"></div>
         <div class="contact-me-image  lg:h-[50vh] h-full"></div>
         <div class="h-full p-10 lg:p-0 flex flex-wrap justify-center items-center">

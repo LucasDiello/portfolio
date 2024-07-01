@@ -2,9 +2,9 @@ import React from 'react'
 import "../styles/animation.css"
 import "../styles/about.css"
 
-export default function About() {
+function About() {
     return (
-            <section className="about-me">
+            <section className="about-me" id='about'>
                 <div className="heading-text hidd show">
                     <h2 className="heading-5-a">Sobre mim</h2>
                     <div className="about-me-text">
@@ -21,3 +21,5 @@ export default function About() {
                         </section>
                     )
 }
+
+export default About

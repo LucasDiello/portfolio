@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/perfil.css";
-import "../styles/animation.css"
+import "../styles/animation.css";
+import { Link } from "react-scroll";
 
 const Perfil = () => {
   return (
@@ -15,10 +16,17 @@ const Perfil = () => {
         </h3>
         <h1>LUCAS DIELLO</h1>
         <div className="container-dark">
-          <a href="#" className="hexagon">
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="hexagon"
+          >
             <div className="side"></div>
             <div className="side"></div>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

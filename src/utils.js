@@ -5,6 +5,15 @@ import { FaP } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiExpress, SiJest, SiMysql, SiNextdotjs, SiRedux, SiTestinglibrary, SiTypescript } from "react-icons/si";
+import restaurantPerfil from "./images/restaurant.png";
+import ldTechPerfil from "./images/ldTech-0fb842bf.png";
+import supabasePerfil from "./images/supabase.jpg";
+import recipesPerfil from "./images/recipes.png";
+import byteBuyPerfil from "./images/bytebuy.png";
+import starwarsPerfil from "./images/starwars-5289bf2b.png";
+import solarsystemPerfil from "./images/solarSystem.png";
+import walletPerfil from "./images/trybeWallet.png";
+import triviaPerfil from "./images/trivia.png";
 
 export const skills = [
     {
@@ -128,3 +137,76 @@ export const skills = [
         path: BiLogoSpringBoot() 
     }
 ]
+
+export const imagesProject = [
+    {
+      id: 1,
+      name: "Restaurant Borcelle",
+      image: restaurantPerfil,
+      description:
+        "Projeto desenvolvido em React, com o intuito de criar um site de restaurante, com uma inteface agradável e responsiva, para que o usuário possa ver o cardápio, fazer reservas, e ver informações sobre o restaurante.",
+    },
+    {
+      id: 2,
+      name: "LD Tech",
+      image: ldTechPerfil,
+      description:
+        "Projeto desenvolvido em Next.js, com o objetivo de criar 1 e-commerce, com sistema de login, cadastro, carrinho de compras, e sistema de pagamento. Utilizando Stripe para pagamentos.",
+    },
+    {
+      id: 3,
+      name: "Supabase",
+      image: supabasePerfil,
+      description:
+        "Projeto em desenvolvimento sendo feito com Next.js, Supabase, shadcn UI, com objetivo de práticar e aprender sobre Next.js e Supabase, além de ser um projeto que visa ajudar pessoas a restaurar imagens antigas.",
+    },
+    {
+      id: 4,
+      name: "Recipes App",
+      image: recipesPerfil,
+      description:
+        "Este projeto foi criado em 1 conjunto de devs, com o objetivo de criar um aplicativo de receitas, onde é possível ver, filtrar e favoritar receitas, além de poder criar, editar e deletar receitas. Caso queira ver mais sobre o projeto, acesse o link do github. ou o link do projeto.",
+    },
+    {
+      id: 5,
+      name: "ByteBuy",
+      image: byteBuyPerfil,
+      description:
+        "Uma plataforma e-commerce. Criado com uma abordagem centrada no cliente e na usabilidade, o sistema permite que os clientes comprem produtos e serviços, adicione ou remova itens do carrinho, entre outras funcionalidades.",
+    },
+    {
+      id: 6,
+      name: "Star Wars",
+      image: starwarsPerfil,
+      description:
+        "Este foi um dos meus primeiros projetos que fiz utilizando react, o objetivo era criar uma aplicação que consumisse uma API e retornasse os dados em uma tabela, além disso, deveria ser possível filtrar os dados e ordená-los.",
+    },
+    {
+      id: 7,
+      name: "Solar System",
+      image: solarsystemPerfil,
+      description:
+        "Este foi um dos meus primeiros projetos que fiz utilizando react, o objetivo era criar uma aplicação que consumisse uma API e retornasse os dados em uma tabela.",
+    },
+    {
+      id: 8,
+      name: "Trybe Wallet",
+      image: walletPerfil,
+      description:
+        "Projeto utilizando Redux, com o objetivo de criar uma carteira de controle de gastos, onde é possível adicionar, remover e editar gastos, além de poder ver o total de gastos e o total de gastos por categoria.",
+    },
+    {
+      id: 9,
+      name: "Trivia",
+      image: triviaPerfil,
+      description:
+        "Projeto utilizando Redux, desenvolvido por 1 equipe de devs com o objetivo de criar um jogo de perguntas e respostas, onde o jogador deve responder 5 perguntas, cada pergunta vale 1 ponto, e o jogador deve acertar pelo menos 3 perguntas para ganhar o jogo.",
+    },
+  ];
+
+  export const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };

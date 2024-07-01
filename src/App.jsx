@@ -3,11 +3,13 @@ import './App.css'
 import About from './routes/About'
 import Perfil from './routes/Perfil'
 import Projects from './routes/Projects'
-import { ProjectsContent } from './routes/ProjectsContent'
+import ProjectsContent from './routes/ProjectsContent'
 import Skills from './routes/Skills'
 import SkillsContent from './routes/SkillsContent'
 import Contact from './routes/Contact'
 import Footer from './routes/Footer'
+import transition from './transition'
+import { AnimatePresence } from 'framer-motion'
 
 function App() {
 
@@ -56,10 +58,19 @@ function App() {
     }
 
   }, [])
-  
+  const TransitionedPerfil = transition(Perfil);
+  const TransitionedAbout = transition(About);
+  const TransitionedProjects1 = transition(Projects);
+  const TransitionedProjects = transition(ProjectsContent);
+  const TransitionedSkills1 = transition(Skills);
+  const TransitionedSkills = transition(SkillsContent);
+  const TransitionedContact = transition(Contact);
+  const TransitionedFooter = transition(Footer);
+
   return (
     <div className='App'>
-        <Perfil />
+      <AnimatePresence mode='wait'>
+        <TransitionedPerfil />
         <About />
         <Projects />
         <ProjectsContent />
@@ -67,6 +78,7 @@ function App() {
         <SkillsContent />
         <Contact />
         <Footer />
+      </AnimatePresence>
       </div>
   )
 }
