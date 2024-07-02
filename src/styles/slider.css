@@ -107,7 +107,6 @@ header{
 .thumbnail{
     position: absolute;
     bottom: 10%;
-    right: 10%;
     z-index: 11;
     padding: 0 50px;
     box-sizing: border-box;

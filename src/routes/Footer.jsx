@@ -76,7 +76,7 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-        <p classNameName="lg:block hidden">Copyright © 2023 lucasDiello.netlify</p>
+        <p className="lg:block hidden">Copyright © 2023 lucasDiello.netlify</p>
       </div>
     </footer>
   );

@@ -77,17 +77,17 @@ const Header = () => {
               <img src={image.image} alt={image.name} />
               <div className="content p-4 font-sans lg:!left-[10%]  top-[12%]">
                 <p className="lg:ml-[5px]">design</p>
-                <h2 className="!text-[30px] md:!text-[60px] lg:!text-7xl lg:ml-[5px] ">
+                <h2 className="!text-[30px] md:!text-[60px] lg:!text-7xl lg:!ml-[2px] ">
                   {image.name}
                 </h2>
                 <p className="text-gray-200 lg:text-base lg:ml-2 text-sm lg:w-[600px]">
                   {image.description}
                 </p>
                 <div className="space-x-4 lg:ml-[7px]">
-                  <a className="cursor-pointer text-white tracking-[2px] link-customizado  font-bold hover:text-red-800">
+                  <a href={image.project} target="_blank" className="cursor-pointer text-white tracking-[2px] link-customizado  font-bold hover:text-red-800">
                     Ver projeto
                   </a>
-                  <a className="cursor-pointer text-white tracking-[2px] link-customizado  font-bold hover:text-red-800">
+                  <a href={image.github} target="_blank" className="cursor-pointer text-white tracking-[2px] link-customizado  font-bold hover:text-red-800">
                     Ver código
                   </a>
                 </div>
@@ -97,6 +97,7 @@ const Header = () => {
         </div>
         <div className="arrows">
           <button
+            className="hover:cursor-pointer"
             onClick={() =>
               setItemActive((prevItemActive) =>
                 prevItemActive === 0 ? countItem - 1 : prevItemActive - 1
@@ -106,6 +107,7 @@ const Header = () => {
             {"<"}
           </button>
           <button
+            className="hover:cursor-pointer"
             onClick={() =>
               setItemActive((prevItemActive) =>
                 prevItemActive === countItem - 1 ? 0 : prevItemActive + 1
@@ -116,7 +118,7 @@ const Header = () => {
           </button>
         </div>
         <div className="flex overflow-y-hidden justify-center items-center">
-          <div className="thumbnail !overflow-hidden lg:w-[50%] w-[100%] hidden md:block">
+          <div className="thumbnail hover:cursor-pointer lg:right-[10%] !overflow-hidden lg:w-[50%] w-[100%] hidden md:block">
             <Slider {...settings}>
               {imagesProject.map((image, index) => (
                 <div
@@ -124,7 +126,7 @@ const Header = () => {
                   key={index}
                 >
                   <img
-                    src={image.image}
+                    src={image.imageMobile}
                     alt={image.name}
                     onClick={() => showSlider(index)}
                   />
@@ -132,7 +134,7 @@ const Header = () => {
               ))}
             </Slider>
           </div>
-          <div className="thumbnail w-[100%] lg:bottom-[50] bottom-[100] flex gap-4 !p-4 md:hidden ">
+          <div className="thumbnail hover:cursor-pointer w-[100%] lg:bottom-[50] bottom-[100] flex gap-4 !p-4 md:hidden ">
             {imagesProject.map((image, index) => (
               <div
                 className={`item !h-[170px] !w-[130px] ${
@@ -141,7 +143,7 @@ const Header = () => {
                 key={index}
               >
                 <img
-                  src={image.image}
+                  src={image.imageMobile}
                   alt={image.name}
                   onClick={() => showSlider(index)}
                 />

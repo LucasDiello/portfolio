@@ -54,6 +54,8 @@
       0px var(--stroke-color);
 }
 
+
+
 .container-dark {
   display: flex;
   justify-content: center;
@@ -70,7 +72,6 @@
   position: relative;
   width: 6.5em;
   height: 3.6em;
-  background-color: #131419;
   box-shadow: -6px -6px 9px #ffffff80, 6px 6px 9px #4646461f;
 }
 
@@ -81,9 +82,10 @@
 .hexagon:before {
   box-sizing: border-box;
   padding-top: 0.7em;
+  color: rgb(174, 2, 2);
+  font-weight: bold;
   text-align: center;
   content: "↴";
-  color: #ccc;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -131,7 +133,7 @@
   .arrow-perfil {
     position: absolute;
     background-image: url(../assets/flecha-da7501b6.png);
-    filter: drop-shadow(0 0 0.75rem #552228);
+    filter: drop-shadow(0 0 0.9rem rgb(174, 2, 2));
     width: 150px;
     height: 200px;
     right: 250px;
@@ -142,9 +144,22 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
+
+  .route-to-projects:before {
+    margin-top: 180px;
+}
+
+.abilities-using:before {
+  height: 30% !important;
+}
+
+.abilities-using:after {
+  top: 89% !important;
+}
+
   .arrow2-perfil {
     position: absolute;
-    filter: drop-shadow(0 0 0.75rem #552228);
+    filter: drop-shadow(0 0 0.9rem rgb(174, 2, 2));
     background-image: url(../assets/flecha2-c0cc5e94.png);
     width: 150px;
     height: 200px;
@@ -175,13 +190,21 @@
     font-size: 2em !important;
   }
 
+  .abilities-using>p {
+    font-size: 12px;
+}
+
   .contact-me-image {
     background-size: cover !important;
     opacity: 15%;
   }
 
-  .powered-by>h1, .powered-by > ul {
+  .powered-by>h1, .powered-by > ul > li > button {
     font-size: 12px !important;
+}
+
+.powered-by > ul > li {
+  padding-top: 0 !important;
 }
 
 .contact-me {
@@ -198,5 +221,7 @@
   padding: 10px;
 }
 
-
+.copy {
+  display: none;
+}
 }
