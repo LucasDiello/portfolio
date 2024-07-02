@@ -21,13 +21,19 @@ const transition = (OgComponent) => {
         {showTransition && (
           <>
             <motion.div
-              className="slide-in hidden lg:block"
+              className="slide-in"
               initial={{ scaleY: 10, opacity: 0 }}
               animate={{ scaleY: 0, opacity: 1 }}
               exit={{ scaleY: 0, opacity: 0 }}
               transition={{ duration: 2, ease: [0.22, 1, 0.36, 1] }}
             ></motion.div>
-
+            <motion.div
+              className="slide-out"
+              initial={{ scaleY: 10, opacity: 0 }}
+              animate={{ scaleY: 0, opacity: 1 }}
+              exit={{ scaleY: 0, opacity: 0 }}
+              transition={{ duration: 2, ease: [0.22, 1, 0.36, 1] }}
+            ></motion.div>
           </>
         )}
       </>

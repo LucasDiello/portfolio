@@ -9,6 +9,10 @@ import Header from "./routes/Header.jsx";
 import BackEnd from "./routes/BackEnd.jsx";
 import Contact from "./routes/Contact.jsx";
 import Footer from "./routes/Footer.jsx";
+import { AnimatePresence } from "framer-motion";
+import transition from "./transition.jsx";
+
+const transitionHeader = transition(Header);
 
 const router = createBrowserRouter([
   {
@@ -18,10 +22,12 @@ const router = createBrowserRouter([
   {
     path: "/projects",
     element: [
+      <AnimatePresence mode='wait'>
       <Header />,
       <BackEnd />,
       <Contact />,
       <Footer />,
+      </AnimatePresence>
     ]
   }
 ]);

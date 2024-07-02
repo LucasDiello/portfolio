@@ -1,28 +1,42 @@
-import React from 'react'
-import Ecommerce from '../assets/e-commerce-fa3a01a1.jpeg'
-import projectMusics from '../assets/project-musics-d7e31baf.jpeg'
-import projectWallet from '../assets/projectWallet-4912858c.jpeg'
-import { useNavigate } from 'react-router'
+import React from 'react';
+import Ecommerce from '../assets/e-commerce-fa3a01a1.jpeg';
+import projectMusics from '../assets/project-musics-d7e31baf.jpeg';
+import projectWallet from '../assets/projectWallet-4912858c.jpeg';
+import { useNavigate } from 'react-router';
+import { Link } from 'react-scroll';
 
 const ProjectsContent = () => {
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+
+  const scrollTo = () => {
+    navigate('/projects');
+    window.scrollTo({
+      top: 0,
+      behavior: 'auto'
+    });
+  }
+
   return (
     <section className="project-content">
-        <div className="links-project">
-            <a className="hidd show" href="#">
-            <img src={Ecommerce} alt=""></img></a>
-            <a className="hidd show" href="#">
-            <img src={projectMusics} alt=""></img>
-            </a><a className="hidd show" href="#">
-            <img src={projectWallet} alt=""></img></a>
-            </div>
-            <div className="route-to-projects">
-                <a href='/projects' className="no-underline flex justify-center items-center about-project z-50 glow-on-hover font-sans" onClick={console.log("cliquei")}>
-                  Mais Sobre</a>
-                </div>
-                </section>
-)
+      <div className="links-project">
+        <a className="hidd show" href="#">
+          <img src={Ecommerce} alt="" />
+        </a>
+        <a className="hidd show" href="#">
+          <img src={projectMusics} alt="" />
+        </a>
+        <a className="hidd show" href="#">
+          <img src={projectWallet} alt="" />
+        </a>
+      </div>
+      <div className="route-to-projects">
+        <button className=" about-project z-50 glow-on-hover font-sans" onClick={scrollTo}>
+          Mais Sobre
+        </button>
+      </div>
+    </section>
+  );
 }
 
-export default ProjectsContent
+export default ProjectsContent;

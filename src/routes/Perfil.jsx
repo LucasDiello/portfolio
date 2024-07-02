@@ -22,9 +22,9 @@ const Perfil = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="hexagon"
+            className="hexagon hover:cursor-pointer"
           >
-            <div className="side"></div>
+            <div className="side"></div >
             <div className="side"></div>
           </Link>
         </div>

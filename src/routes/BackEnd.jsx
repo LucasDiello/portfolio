@@ -3,7 +3,7 @@ import "../styles/backend.css"
 
 const BackEnd = () => {
   return (
-    <section className="bg-[#181818]">
+    <section className="bg-[#181818]" id="backend">
       <section class="flex justify-center">
         <div class=" w-full font-sans">
           <section class="container-projects !bg-[#181818]">
