@@ -20,18 +20,18 @@ const ProjectsContent = () => {
   return (
     <section className="project-content">
       <div className="links-project">
-        <a className="hidd show" href="projects">
+        <a className="hidd show cursor-pointer" onClick={scrollTo}>
           <img src={Ecommerce} alt="" />
         </a>
-        <a className="hidd show" href="projects">
+        <a className="hidd show cursor-pointer" onClick={scrollTo}>
           <img src={projectMusics} alt="" />
         </a>
-        <a className="hidd show" href="projects">
+        <a className="hidd show cursor-pointer" onClick={scrollTo}>
           <img src={projectWallet} alt="" />
         </a>
       </div>
       <div className="route-to-projects">
-        <button className=" about-project z-50 glow-on-hover font-sans" onClick={scrollTo}>
+        <button className="about-project z-50 glow-on-hover font-sans" onClick={scrollTo}>
           Mais Sobre
         </button>
       </div>

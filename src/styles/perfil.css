@@ -157,6 +157,14 @@
   top: 89% !important;
 }
 
+.slider .list .item::after {
+  background-image: linear-gradient(to top, #000 0%, transparent) !important;
+}
+
+#root > div > section.content-skills > div > div.list-content > div > span > i > svg {
+  font-size: 40px !important;
+}
+
   .arrow2-perfil {
     position: absolute;
     filter: drop-shadow(0 0 0.9rem rgb(174, 2, 2));
