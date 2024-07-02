@@ -21,7 +21,7 @@ const Perfil = () => {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}
+            duration={1000}
             className="hexagon hover:cursor-pointer"
           >
             <div className="side"></div >

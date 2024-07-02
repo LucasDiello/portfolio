@@ -12,3 +12,8 @@
     background-size: contain;
     opacity: 6%;
 }
+
+.border-contact {
+    border-bottom: 2px solid #d8d8d8;
+    color: #fff;
+}

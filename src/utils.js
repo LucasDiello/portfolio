@@ -145,6 +145,8 @@ export const imagesProject = [
       image: restaurantPerfil,
       description:
         "Projeto desenvolvido em React, com o intuito de criar um site de restaurante, com uma inteface agradável e responsiva, para que o usuário possa ver o cardápio, fazer reservas, e ver informações sobre o restaurante.",
+      project:"https://restaurantborcelle.netlify.app/",
+      github:"https://github.com/LucasDiello/React-Restaurant",
     },
     {
       id: 2,
@@ -152,6 +154,8 @@ export const imagesProject = [
       image: ldTechPerfil,
       description:
         "Projeto desenvolvido em Next.js, com o objetivo de criar 1 e-commerce, com sistema de login, cadastro, carrinho de compras, e sistema de pagamento. Utilizando Stripe para pagamentos.",
+      project:"https://ldtech.netlify.app/",
+      github:"https://github.com/LucasDiello/Next-js-Ecommerce",
     },
     {
       id: 3,
@@ -159,6 +163,8 @@ export const imagesProject = [
       image: supabasePerfil,
       description:
         "Projeto em desenvolvimento sendo feito com Next.js, Supabase, shadcn UI, com objetivo de práticar e aprender sobre Next.js e Supabase, além de ser um projeto que visa ajudar pessoas a restaurar imagens antigas.",
+      project:"https://restoredimage.netlify.app/",
+      github:"https://github.com/LucasDiello/Next-js-Supabase",
     },
     {
       id: 4,
@@ -166,6 +172,8 @@ export const imagesProject = [
       image: recipesPerfil,
       description:
         "Este projeto foi criado em 1 conjunto de devs, com o objetivo de criar um aplicativo de receitas, onde é possível ver, filtrar e favoritar receitas, além de poder criar, editar e deletar receitas. Caso queira ver mais sobre o projeto, acesse o link do github. ou o link do projeto.",
+      project:"https://recipe-app-g6.vercel.app/",
+      github:"https://github.com/LucasDiello/app-recipes",
     },
     {
       id: 5,
@@ -173,6 +181,8 @@ export const imagesProject = [
       image: byteBuyPerfil,
       description:
         "Uma plataforma e-commerce. Criado com uma abordagem centrada no cliente e na usabilidade, o sistema permite que os clientes comprem produtos e serviços, adicione ou remova itens do carrinho, entre outras funcionalidades.",
+      project:"https://bytebuy.netlify.app/",
+      github:"https://github.com/LucasDiello/E-commerce",
     },
     {
       id: 6,
@@ -180,6 +190,8 @@ export const imagesProject = [
       image: starwarsPerfil,
       description:
         "Este foi um dos meus primeiros projetos que fiz utilizando react, o objetivo era criar uma aplicação que consumisse uma API e retornasse os dados em uma tabela, além disso, deveria ser possível filtrar os dados e ordená-los.",
+      project:"https://starorigin.netlify.app/",
+      github:"https://github.com/LucasDiello/starwars-planets-search",
     },
     {
       id: 7,
@@ -187,6 +199,8 @@ export const imagesProject = [
       image: solarsystemPerfil,
       description:
         "Este foi um dos meus primeiros projetos que fiz utilizando react, o objetivo era criar uma aplicação que consumisse uma API e retornasse os dados em uma tabela.",
+      project:"https://solarssystem.netlify.app/",
+      github:"https://github.com/LucasDiello/solar-system-lucas",
     },
     {
       id: 8,
@@ -194,6 +208,8 @@ export const imagesProject = [
       image: walletPerfil,
       description:
         "Projeto utilizando Redux, com o objetivo de criar uma carteira de controle de gastos, onde é possível adicionar, remover e editar gastos, além de poder ver o total de gastos e o total de gastos por categoria.",
+      project:"https://walletisapp.netlify.app/",
+      github:"https://github.com/LucasDiello/wallet-app",
     },
     {
       id: 9,
@@ -201,12 +217,7 @@ export const imagesProject = [
       image: triviaPerfil,
       description:
         "Projeto utilizando Redux, desenvolvido por 1 equipe de devs com o objetivo de criar um jogo de perguntas e respostas, onde o jogador deve responder 5 perguntas, cada pergunta vale 1 ponto, e o jogador deve acertar pelo menos 3 perguntas para ganhar o jogo.",
+      project:"https://app-trivia-game.netlify.app/",
+      github:"https://github.com/LucasDiello/trivia-redux-app",
     },
   ];
-
-  export const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };

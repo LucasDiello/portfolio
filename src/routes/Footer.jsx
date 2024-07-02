@@ -1,34 +1,45 @@
 import React from "react";
 import "../styles/footer.css"
+import { useNavigate } from "react-router";
 
 const Footer = () => {
+  const navigate = useNavigate()
+
+  const scrollTo = (route) => {
+    navigate(route)
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+
   return (
-    <footer class="footer-container">
-      <div class="powered-by">
+    <footer className="footer-container">
+      <div className="powered-by">
         <h1>
           Criado por <p>Lucas Diello</p>
         </h1>
         <ul>
           <li>
-            <a class="hover:text-red-800" href="/">
+            <button onClick={() => scrollTo("/")} className="hover:text-red-800 hover:cursor-pointer" >
               Início
-            </a>
+            </button>
           </li>
           <li>
-            <a class="hover:text-red-800" href="/projects">
+            <button onClick={() => scrollTo("/projects")} className="hover:text-red-800 hover:cursor-pointer" >
               Projetos
-            </a>
+            </button>
           </li>
         </ul>
       </div>
-      <div class="contact-me items-center">
-        <p class="hidden lg:block">
+      <div className="contact-me items-center">
+        <p className="hidden lg:block">
           Caso você esteja interessado após visualizar o meu portfólio e deseja
           entrar em contato, fico extremamente empolgado em saber que o meu
           trabalho despertou o seu interesse.
-          <span class="text-[#93b0c6] font-bold">Contate-me!</span>
+          <span className="text-[#93b0c6] font-bold">Contate-me!</span>
         </p>
-        <ul class="lg:space-x-16 flex justify-center">
+        <ul className="lg:space-x-16 flex justify-center">
           <li>
             <a
               href="https://www.linkedin.com/in/lucas-diello-5b5440265/"
@@ -65,7 +76,7 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-        <p>Copyright © 2023 lucasDiello.netlify</p>
+        <p classNameName="lg:block hidden">Copyright © 2023 lucasDiello.netlify</p>
       </div>
     </footer>
   );

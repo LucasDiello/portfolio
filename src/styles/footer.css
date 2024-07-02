@@ -1,6 +1,7 @@
 .footer-container {
     background: #101010;
     position: relative;
+    bottom: 0;
 }
 
 .powered-by {
@@ -31,15 +32,18 @@
 }
 
 .powered-by > ul > li {
-    margin-right: 40px;
+    margin-right: 20px;
     padding-top: 10px;
 }
 
-.powered-by > ul > li > a {
+.powered-by > ul > li > button {
     text-decoration: none;
     font-weight: 100;
     transition: .5s;
+    font-size: 20px;
     color: #fff;
+    background-color: inherit;
+    border: none;
     font-weight: 700;
     font-family: Anton, sans-serif;
 }
@@ -53,7 +57,7 @@
 
 .contact-me>p:nth-child(1) {
     color: #fff;
-    font-size: 12px;
+    font-size: 10px;
     width: 15%;
 }
 
@@ -68,3 +72,4 @@
     font-size: 12px;
     width: 17%;
 }
+

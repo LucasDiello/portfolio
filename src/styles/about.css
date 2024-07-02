@@ -3,7 +3,6 @@
     padding: 4em 2em;
     text-align: center;
     position: relative;
-    z-index: -1;
     color: #fff;
 }
 
@@ -16,6 +15,7 @@
 .heading-text:before {
     content: "";
     position: absolute;
+    z-index: -1;
     top: -100%;
     left: 50%;
     width: 2px;

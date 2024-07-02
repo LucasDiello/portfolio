@@ -13,20 +13,20 @@ const ProjectsContent = () => {
     navigate('/projects');
     window.scrollTo({
       top: 0,
-      behavior: 'auto'
+      behavior: 'smooth'
     });
   }
 
   return (
     <section className="project-content">
       <div className="links-project">
-        <a className="hidd show" href="#">
+        <a className="hidd show" href="projects">
           <img src={Ecommerce} alt="" />
         </a>
-        <a className="hidd show" href="#">
+        <a className="hidd show" href="projects">
           <img src={projectMusics} alt="" />
         </a>
-        <a className="hidd show" href="#">
+        <a className="hidd show" href="projects">
           <img src={projectWallet} alt="" />
         </a>
       </div>
