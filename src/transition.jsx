@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const transition = (OgComponent) => {
   const screenWidth = window.innerWidth;
-  const screenMobile = screenWidth < 768 ? 4 : 2;
+  const screenMobile = screenWidth < 768 ? 3 : 2;
   const TransitionedComponent = () => {
 
     return (
