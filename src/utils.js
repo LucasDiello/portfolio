@@ -32,11 +32,13 @@ import starwarsPerfil from "./images/starwars-5289bf2b.png";
 import solarsystemPerfil from "./images/solarSystem.png";
 import walletPerfil from "./images/trybeWallet.png";
 import triviaPerfil from "./images/trivia.png";
+import lmDigital from "./images/lmDigital.png";
 import restaurantMobile from "./assets/restaurantProject.png";
 import ldTechMobile from "./assets/ldTechProject.png";
 import supabaseMobile from "./assets/supabaseProject.jpg";
 import byteBuyMobile from "./assets/bytebuyProject.png";
 import starwarsMobile from "./assets/starwarsProject.png";
+import lmDigitalMobile from "./assets/lmDigitalProject.png";
 
 export const skills = [
   {
@@ -191,6 +193,16 @@ export const imagesProject = [
       "Projeto desenvolvido em React, com o intuito de criar um site de restaurante, com uma inteface agradável e responsiva, para que o usuário possa ver o cardápio, fazer reservas, e ver informações sobre o restaurante.",
     project: "https://restaurantborcelle.netlify.app/",
     github: "https://github.com/LucasDiello/React-Restaurant",
+  },
+  {
+    id:2,
+    name: "LM Digital",
+    image: lmDigital,
+    imageMobile: lmDigitalMobile,
+    description:
+    "Projeto desenvolvido para cliente do mercado digital, com o intuito de criar um site de vendas de infoprodutos, com uma inteface agradável e responsiva.",
+    project: "https://lmdigital.netlify.app/",
+    github: "https://github.com/LucasDiello/site-venda",
   },
   {
     id: 2,
