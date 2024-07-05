@@ -32,6 +32,7 @@ import starwarsPerfil from "./images/starwars-5289bf2b.png";
 import solarsystemPerfil from "./images/solarSystem.png";
 import walletPerfil from "./images/trybeWallet.png";
 import triviaPerfil from "./images/trivia.png";
+import ldmechanicsPerfil from "./images/ldmechanics.png";
 import lmDigital from "./images/lmDigital.png";
 import restaurantMobile from "./assets/restaurantProject.png";
 import ldTechMobile from "./assets/ldTechProject.png";
@@ -39,7 +40,7 @@ import supabaseMobile from "./assets/supabaseProject.jpg";
 import byteBuyMobile from "./assets/bytebuyProject.png";
 import starwarsMobile from "./assets/starwarsProject.png";
 import lmDigitalMobile from "./assets/lmDigitalProject.png";
-
+import ldmechanicsMobile from "./assets/ldmechanicsProject.png";
 export const skills = [
   {
     id: 1,
@@ -205,7 +206,17 @@ export const imagesProject = [
     github: "https://github.com/LucasDiello/site-venda",
   },
   {
-    id: 2,
+    id:3,
+    name:"Mecânica",
+    image: ldmechanicsPerfil,
+    imageMobile: ldmechanicsMobile,
+    description:
+      "Projeto desenvolvido em React, com o intuito de criar um site de mecânica, com uma inteface agradável e responsiva, para que o usuário possa ver os serviços, fazer orçamentos, e ver informações sobre a mecânica.",
+    project: "https://ldmechanics.netlify.app/",
+    github: "https://github.com/LucasDiello/mechanics_landing_page"
+  },
+  {
+    id: 4,
     name: "LD Tech",
     image: ldTechPerfil,
     imageMobile: ldTechMobile,
@@ -215,7 +226,7 @@ export const imagesProject = [
     github: "https://github.com/LucasDiello/Next-js-Ecommerce",
   },
   {
-    id: 3,
+    id: 5,
     name: "Supabase",
     image: supabasePerfil,
     imageMobile: supabaseMobile,
@@ -225,7 +236,7 @@ export const imagesProject = [
     github: "https://github.com/LucasDiello/Next-js-Supabase",
   },
   {
-    id: 4,
+    id: 6,
     name: "Recipes App",
     image: recipesPerfil,
     imageMobile: recipesPerfil,
@@ -235,7 +246,7 @@ export const imagesProject = [
     github: "https://github.com/LucasDiello/app-recipes",
   },
   {
-    id: 5,
+    id: 7,
     name: "ByteBuy",
     image: byteBuyPerfil,
     imageMobile: byteBuyMobile,
@@ -245,7 +256,7 @@ export const imagesProject = [
     github: "https://github.com/LucasDiello/E-commerce",
   },
   {
-    id: 6,
+    id: 8,
     name: "Star Wars",
     image: starwarsPerfil,
     imageMobile: starwarsMobile,
@@ -255,7 +266,7 @@ export const imagesProject = [
     github: "https://github.com/LucasDiello/starwars-planets-search",
   },
   {
-    id: 7,
+    id: 9,
     name: "Solar System",
     image: solarsystemPerfil,
     imageMobile: solarsystemPerfil,
@@ -265,7 +276,7 @@ export const imagesProject = [
     github: "https://github.com/LucasDiello/solar-system-lucas",
   },
   {
-    id: 8,
+    id: 10,
     name: "Trybe Wallet",
     image: walletPerfil,
     imageMobile: walletPerfil,
@@ -275,7 +286,7 @@ export const imagesProject = [
     github: "https://github.com/LucasDiello/wallet-app",
   },
   {
-    id: 9,
+    id: 11,
     name: "Trivia",
     image: triviaPerfil,
     imageMobile: triviaPerfil,
