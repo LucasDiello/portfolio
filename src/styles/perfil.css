@@ -76,7 +76,7 @@
 }
 
 .hexagon:hover:before {
-  color: #173fc2;
+  color: #93b0c6
 }
 
 .hexagon:before {
@@ -122,6 +122,18 @@
   box-shadow: -6px -6px 9px #ffffff80, 6px 6px 9px #4646461f;
 }
 
+@keyframes moveImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }  
+}
+
 @media screen and (max-width: 766px) {
   .image-perfil {
     background-image: url(../assets/home.jpg);
@@ -140,7 +152,7 @@
     bottom: 0;
     background-size: cover;
     animation-name: moveImage;
-    animation-duration: 1s;
+    animation-duration: 1.2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
@@ -158,7 +170,7 @@
 }
 
 .slider .list .item::after {
-  background-image: linear-gradient(to top, #000 0%, transparent) !important;
+  background-image: linear-gradient(to top, #000 -10%, transparent) !important;
 }
 
 #root > div > section.content-skills > div > div.list-content > div > span > i > svg {
@@ -175,7 +187,7 @@
     bottom: 0;
     background-size: cover;
     animation-name: moveImage;
-    animation-duration: 1s;
+    animation-duration: 1.2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
@@ -204,7 +216,7 @@
 
   .contact-me-image {
     background-size: cover !important;
-    opacity: 15%;
+    opacity: 20% !important;
   }
 
   .powered-by>h1, .powered-by > ul > li > button {

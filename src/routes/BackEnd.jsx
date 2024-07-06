@@ -3,7 +3,7 @@ import "../styles/backend.css"
 
 const BackEnd = () => {
   return (
-    <section className="bg-[#181818]" id="backend">
+    <section className="bg-[#181818] relative z-50" id="backend">
       <section class="flex justify-center">
         <div class=" w-full font-sans">
           <section class="container-projects !bg-[#181818]">
@@ -14,7 +14,7 @@ const BackEnd = () => {
                 fill="currentColor"
                 stroke-width="0"
                 viewBox="0 0 24 24"
-                class="text-teal-400"
+                class="text-[#93b0c6]"
                 height="25px"
                 width="25px"
                 xmlns="http://www.w3.org/2000/svg"
