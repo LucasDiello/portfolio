@@ -72,6 +72,7 @@ const Contact = () => {
             <button
               type="submit"
               class="h-10 rounded-md bg-[#93b0c6] border-none hover:bg-[#6392b3]"
+              aria-label="Enviar email de contato"
             >
               <svg
                 stroke="currentColor"

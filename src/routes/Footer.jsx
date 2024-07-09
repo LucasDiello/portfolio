@@ -1,17 +1,17 @@
 import React from "react";
-import "../styles/footer.css"
+import "../styles/footer.css";
 import { useNavigate } from "react-router";
 
 const Footer = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const scrollTo = (route) => {
-    navigate(route)
+    navigate(route);
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
-    })
-  }
+      behavior: "smooth",
+    });
+  };
 
   return (
     <footer className="footer-container">
@@ -21,12 +21,18 @@ const Footer = () => {
         </h1>
         <ul>
           <li>
-            <button onClick={() => scrollTo("/")} className="hover:text-red-800 hover:cursor-pointer" >
+            <button
+              onClick={() => scrollTo("/")}
+              className="hover:text-red-800 hover:cursor-pointer"
+            >
               Início
             </button>
           </li>
           <li>
-            <button onClick={() => scrollTo("/projects")} className="hover:text-red-800 hover:cursor-pointer" >
+            <button
+              onClick={() => scrollTo("/projects")}
+              className="hover:text-red-800 hover:cursor-pointer"
+            >
               Projetos
             </button>
           </li>
@@ -44,6 +50,8 @@ const Footer = () => {
             <a
               href="https://www.linkedin.com/in/lucas-diello-5b5440265/"
               target="blank"
+              aria-label="
+              Clique para acessar o meu LinkedIn!"
             >
               <svg
                 stroke="currentColor"
@@ -60,7 +68,13 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="https://github.com/LucasDiello" target="blank">
+            <a
+              href="https://github.com/LucasDiello"
+              target="blank"
+              aria-label="
+              Clique para acessar o meu GitHub!
+            "
+            >
               <svg
                 stroke="currentColor"
                 fill="currentColor"

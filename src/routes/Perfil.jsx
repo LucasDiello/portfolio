@@ -24,6 +24,7 @@ const Perfil = () => {
             duration={1000}
             className="hexagon bg-[#2d2f36] lg:bg-[#131419] hover:cursor-pointer"
             href="#"
+            aria-label="Para saber mais sobre mim clique aqui!"
             >
             <div className="side"></div >
             <div className="side"></div>
