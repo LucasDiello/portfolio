@@ -3,29 +3,37 @@ import "../styles/contact.css";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-    const sendEmail = async (e) => {
-        e.preventDefault();
-        if(!name || !email || !message) return alert("Preencha todos os campos!");
-        
-        const templateParams = {
-            from_name: name,
-            message: message,
-            email: email,
+  const sendEmail = async (e) => {
+    e.preventDefault();
+    if (!name || !email || !message) return alert("Preencha todos os campos!");
+
+    const templateParams = {
+      from_name: name,
+      message: message,
+      email: email,
+    };
+    emailjs
+      .send(
+        "service_lzlsbka",
+        "template_ocpy3y8",
+        templateParams,
+        "c7xOWKtXvM4FEGhYa"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Email enviado com sucesso!");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Erro ao enviar email!");
         }
-        emailjs.send("service_lzlsbka", "template_ocpy3y8", templateParams, "c7xOWKtXvM4FEGhYa").
-        then((result) => {
-            console.log(result.text);
-            alert("Email enviado com sucesso!");
-        }, (error) => {
-            console.log(error.text);
-            alert("Erro ao enviar email!");
-        });
-
-    }   
+      );
+  };
   return (
     <section
       className="lg:h-[50vh] bg-black flex justify-center items-center
@@ -53,21 +61,21 @@ const Contact = () => {
               placeholder="Nome"
               value={name}
               autoComplete="on"
-                onChange={(e) => setName(e.target.value)}
+              onChange={(e) => setName(e.target.value)}
             />
             <input
               type="email"
               class="h-10 bg-inherit border-none border-contact text-slate-200"
               placeholder="Email"
-                value={email}
+              value={email}
               autoComplete="on"
               onChange={(e) => setEmail(e.target.value)}
             />
             <textarea
               placeholder="Mensagem"
               class="h-14 border-none border-contact !text-black resize-none"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
             ></textarea>
             <button
               type="submit"
@@ -92,9 +100,9 @@ const Contact = () => {
       <div class="lg:ml-10 lg:block hidden  space-y-5">
         <h1 class="">Depoimentos</h1>
         <div>
-          <h3>
+          <h2>
             Entre em <span class="text-[#93b0c6] font-bold">Contato!</span>
-          </h3>
+          </h2>
           <p class="text-sm ">
             algumas informações sobre mim, caso vc se interessar
             <br /> em contato.
