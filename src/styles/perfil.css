@@ -54,8 +54,6 @@
       0px var(--stroke-color);
 }
 
-
-
 .container-dark {
   display: flex;
   justify-content: center;
@@ -76,7 +74,7 @@
 }
 
 .hexagon:hover:before {
-  color: #93b0c6
+  color: #93b0c6;
 }
 
 .hexagon:before {
@@ -131,7 +129,7 @@
   }
   100% {
     transform: translateY(0);
-  }  
+  }
 }
 
 @media screen and (max-width: 766px) {
@@ -140,7 +138,7 @@
     background-size: cover;
     opacity: 65%;
     filter: blur(1px);
-}
+  }
 
   .arrow-perfil {
     position: absolute;
@@ -159,23 +157,35 @@
 
   .route-to-projects:before {
     margin-top: 180px;
-}
+  }
 
-.abilities-using:before {
-  height: 30% !important;
-}
+  .abilities-using:before {
+    height: 30% !important;
+  }
 
-.abilities-using:after {
-  top: 89% !important;
-}
+  .abilities-using:after {
+    top: 89% !important;
+  }
 
-.slider .list .item::after {
-  background-image: linear-gradient(to top, #000 -10%, transparent) !important;
-}
+  .slider .list .item::after {
+    background-image: linear-gradient(
+      to top,
+      #000 -10%,
+      transparent
+    ) !important;
+  }
 
-#root > div > section.content-skills > div > div.list-content > div > span > i > svg {
-  font-size: 40px !important;
-}
+  #root
+    > div
+    > section.content-skills
+    > div
+    > div.list-content
+    > div
+    > span
+    > i
+    > svg {
+    font-size: 40px !important;
+  }
 
   .arrow2-perfil {
     position: absolute;
@@ -210,38 +220,39 @@
     font-size: 2em !important;
   }
 
-  .abilities-using>p {
+  .abilities-using > p {
     font-size: 12px;
-}
+  }
 
   .contact-me-image {
     background-size: cover !important;
     opacity: 20% !important;
   }
 
-  .powered-by>h1, .powered-by > ul > li > button {
+  .powered-by > h1,
+  .powered-by > ul > li > button {
     font-size: 12px !important;
-}
+  }
 
-.powered-by > ul > li {
-  padding-top: 0 !important;
-}
+  .powered-by > ul > li {
+    padding-top: 0 !important;
+  }
 
-.contact-me {
-  justify-content: center !important;
-  align-items: center !important;
-}
+  .contact-me {
+    justify-content: center !important;
+    align-items: center !important;
+  }
 
-.contact-me>ul {
-  width: 100% !important;
-  padding: 0px !important;
-}
+  .contact-me > ul {
+    width: 100% !important;
+    padding: 0px !important;
+  }
 
-.contact-me>ul>li {
-  padding: 10px;
-}
+  .contact-me > ul > li {
+    padding: 10px;
+  }
 
-.copy {
-  display: none;
-}
+  .copy {
+    display: none;
+  }
 }
