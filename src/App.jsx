@@ -59,13 +59,6 @@ function App() {
 
   }, [])
   const TransitionedPerfil = transition(Perfil);
-  const TransitionedAbout = transition(About);
-  const TransitionedProjects1 = transition(Projects);
-  const TransitionedProjects = transition(ProjectsContent);
-  const TransitionedSkills1 = transition(Skills);
-  const TransitionedSkills = transition(SkillsContent);
-  const TransitionedContact = transition(Contact);
-  const TransitionedFooter = transition(Footer);
 
   return (
     <div className='App'>

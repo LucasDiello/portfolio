@@ -23,6 +23,7 @@ const Perfil = () => {
             offset={-70}
             duration={1000}
             className="hexagon bg-[#2d2f36] lg:bg-[#131419] hover:cursor-pointer"
+            href="#"
             >
             <div className="side"></div >
             <div className="side"></div>

@@ -20,13 +20,13 @@ const ProjectsContent = () => {
   return (
     <section className="project-content">
       <div className="links-project">
-        <a className="hidd show cursor-pointer" onClick={scrollTo}>
+        <a className="hidd show cursor-pointer" onClick={scrollTo} href='/projects'> 
           <img src={Ecommerce} alt="" />
         </a>
-        <a className="hidd show cursor-pointer" onClick={scrollTo}>
+        <a className="hidd show cursor-pointer" onClick={scrollTo} href='/projects'>
           <img src={projectMusics} alt="" />
         </a>
-        <a className="hidd show cursor-pointer" onClick={scrollTo}>
+        <a className="hidd show cursor-pointer" onClick={scrollTo} href='/projects'>
           <img src={projectWallet} alt="" />
         </a>
       </div>

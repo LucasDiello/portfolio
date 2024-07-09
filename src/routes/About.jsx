@@ -21,7 +21,7 @@ function About() {
             <br />
             Estou sempre em busca de novas oportunidades de aprendizado, e estou
             ansioso para meus próximos desafios profissionais.{" "}
-            <Link to="contact" spy={true} smooth={true} offset={-70} duration={1000}
+            <Link to="contact" spy={true} smooth={true} offset={-70} duration={1000} href="#"
              className="bg-inherit hover:cursor-pointer  font-bold text-base text-[#93b0c6] p-0 border-none">
               Contate me!
             </Link>
