@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import "../styles/contact.css";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
+  const { t, i18n : {language} } = useTranslation();
 
   const sendEmail = async (e) => {
     e.preventDefault();
@@ -45,10 +48,10 @@ const Contact = () => {
       <div class="h-full p-10 lg:p-0 flex flex-wrap justify-center items-center">
         <div class="lg:mr-10">
           <h1>
-            Entre em <span class="text-[#93b0c6] font-bold">Contato!</span>
+            {t("get-in-touch")} <span class="text-[#93b0c6] font-bold">{t("title-contact2")}</span>
           </h1>
           <p class="text-sm">
-            caso queira entrar em contato, me envie um email:
+            {t("text-contact2")}
           </p>
           <form
             class="flex flex-col mt-2 relative z-50 space-y-6"
@@ -58,7 +61,7 @@ const Contact = () => {
             <input
               type="text"
               class="h-10 bg-inherit border-none border-contact text-slate-200"
-              placeholder="Nome"
+              placeholder={`${language === "en" ? "Name" : "Nome"}`}
               value={name}
               autoComplete="on"
               onChange={(e) => setName(e.target.value)}
@@ -72,7 +75,7 @@ const Contact = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
             <textarea
-              placeholder="Mensagem"
+              placeholder={`${language === "en" ? "Message" : "Mensagem"}`}
               class="h-14 border-none border-contact !text-black resize-none"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
@@ -98,14 +101,13 @@ const Contact = () => {
         </div>
       </div>
       <div class="lg:ml-10 lg:block hidden  space-y-5">
-        <h1 class="">Depoimentos</h1>
+        <h1 class="">{t("title-testimonials")}</h1>
         <div>
           <h2>
-            Entre em <span class="text-[#93b0c6] font-bold">Contato!</span>
+            {t("get-in-touch")} <span class="text-[#93b0c6] font-bold">{t("title-contact2")}</span>
           </h2>
           <p class="text-sm ">
-            algumas informações sobre mim, caso vc se interessar
-            <br /> em contato.
+              {t("text-testimonials")}
           </p>
         </div>
         <div class="flex items-center  ">
@@ -125,7 +127,7 @@ const Contact = () => {
             </svg>
           </div>
           <div>
-            <p>Localização</p>
+            <p>{t("localization")}</p>
             <p>RS - Canoas - Mathias Velho</p>
           </div>
         </div>
@@ -145,7 +147,7 @@ const Contact = () => {
             </svg>
           </div>
           <div>
-            <p>Telefone</p>
+            <p>{t("telephone")}</p>
             <p>(51) 9 9251-4676</p>
           </div>
         </div>

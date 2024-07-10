@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { imagesProject } from "../utils";
+import { imagesProject } from "../lib/utils";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

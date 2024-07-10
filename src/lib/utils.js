@@ -23,30 +23,32 @@ import {
   SiTestinglibrary,
   SiTypescript,
 } from "react-icons/si";
-import restaurantPerfil from "./images/restaurant.png";
-import ldTechPerfil from "./images/ldTech-0fb842bf.png";
-import supabasePerfil from "./images/supabase.jpg";
-import recipesPerfil from "./images/recipes.png";
-import byteBuyPerfil from "./images/bytebuy.png";
-import starwarsPerfil from "./images/starwars-5289bf2b.png";
-import solarsystemPerfil from "./images/solarSystem.png";
-import walletPerfil from "./images/trybeWallet.png";
-import triviaPerfil from "./images/trivia.png";
-import ldmechanicsPerfil from "./images/ldmechanics.png";
-import lmDigital from "./images/lmDigital.png";
-import restaurantMobile from "./assets/restaurantProject.png";
-import ldTechMobile from "./assets/ldTechProject.png";
-import supabaseMobile from "./assets/supabaseProject.jpg";
-import byteBuyMobile from "./assets/bytebuyProject.png";
-import starwarsMobile from "./assets/starwarsProject.png";
-import lmDigitalMobile from "./assets/lmDigitalProject.png";
-import ldmechanicsMobile from "./assets/ldmechanicsProject.png";
+import restaurantPerfil from "../images/restaurant.png";
+import ldTechPerfil from "../images/ldTech-0fb842bf.png";
+import supabasePerfil from "../images/supabase.jpg";
+import recipesPerfil from "../images/recipes.png";
+import byteBuyPerfil from "../images/bytebuy.png";
+import starwarsPerfil from "../images/starwars-5289bf2b.png";
+import solarsystemPerfil from "../images/solarSystem.png";
+import walletPerfil from "../images/trybeWallet.png";
+import triviaPerfil from "../images/trivia.png";
+import ldmechanicsPerfil from "../images/ldmechanics.png";
+import lmDigital from "../images/lmDigital.png";
+import restaurantMobile from "../assets/restaurantProject.png";
+import ldTechMobile from "../assets/ldTechProject.png";
+import supabaseMobile from "../assets/supabaseProject.jpg";
+import byteBuyMobile from "../assets/bytebuyProject.png";
+import starwarsMobile from "../assets/starwarsProject.png";
+import lmDigitalMobile from "../assets/lmDigitalProject.png";
+import ldmechanicsMobile from "../assets/ldmechanicsProject.png";
 export const skills = [
   {
     id: 1,
     name: "java",
     description:
       "Java é uma linguagem de alto nível, orientada a objetos e independente de plataforma. Java é uma das linguagens de programação mais populares do mundo e é usada em uma variedade de aplicativos.",
+    descriptionEn:
+      "Java is a high-level, object-oriented, platform-independent language. Java is one of the most popular programming languages in the world and is used in a variety of applications.",
     path: FaJava(),
   },
   {
@@ -54,6 +56,8 @@ export const skills = [
     name: "javascript",
     description:
       "JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web — toda vez que uma página da web faz mais do que apenas sentar ali e exibir informações estáticas para você.",
+    descriptionEn:
+      "JavaScript is a programming language that allows you to implement complex items on web pages - every time a web page does more than just sit there and display static information to you.",
     path: IoLogoJavascript(),
   },
   {
@@ -61,6 +65,8 @@ export const skills = [
     name: "python",
     description:
       "Python é uma linguagem de programação que permite trabalhar rapidamente e integrar sistemas com mais eficácia. Criado por Guido van Rossum, Python é uma linguagem relativamente fácil de aprender e é conhecida por sua clareza e legibilidade.",
+    descriptionEn:
+      " Python is a programming language that allows you to work quickly and integrate systems more effectively. Created by Guido van Rossum, Python is a relatively easy language to learn and is known for its clarity and readability.",
     path: FaPython(),
   },
   {
@@ -68,6 +74,8 @@ export const skills = [
     name: "nodejs",
     description:
       "Node.js é uma plataforma construída sobre o motor JavaScript do Google Chrome para facilmente construir aplicações de rede rápidas e escaláveis. Node.js usa um modelo de I/O direcionada por eventos não bloqueante que o torna leve e eficiente.",
+    descriptionEn:
+      " Node.js is a platform built on Google Chrome's JavaScript engine for easily building fast, scalable network applications. Node.js uses a non-blocking, event-driven I/O model that makes it lightweight and efficient.",
     path: FaNodeJs(),
   },
   {
@@ -75,6 +83,8 @@ export const skills = [
     name: "typescript",
     description:
       "TypeScript é um superconjunto de JavaScript desenvolvido pela Microsoft que adiciona tipagem estática opcional à linguagem. TypeScript foi projetado para o desenvolvimento de aplicativos em larga escala e transcompila para JavaScript.",
+    descriptionEn:
+      " TypeScript is a superset of JavaScript developed by Microsoft that adds optional static typing to the language. TypeScript is designed for large-scale application",
     path: SiTypescript(),
   },
   {
@@ -82,6 +92,8 @@ export const skills = [
     name: "react",
     description:
       "React é uma biblioteca JavaScript para criar interfaces de usuário. É mantido pelo Facebook e por uma comunidade de empresas e indivíduos. React pode ser usado como base no desenvolvimento de aplicações de página única ou móveis.",
+    descriptionEn:
+      " React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of companies and individuals. React can be used as a base in the development of single-page or mobile applications.",
     path: FaReact(),
   },
   {
@@ -89,6 +101,8 @@ export const skills = [
     name: "next",
     description:
       "Next.js é um framework de desenvolvimento web front-end que permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para aplicativos da web baseados em React.",
+    descriptionEn:
+      " Next.js is a front-end web development framework that allows features such as server-side rendering and static site generation for React-based web applications.",
     path: SiNextdotjs(),
   },
   {
@@ -96,6 +110,8 @@ export const skills = [
     name: "html",
     description:
       "HTML é a linguagem de marcação padrão para documentos projetados para serem exibidos em um navegador da web. Pode ser ajudado por tecnologias como folhas de estilo CSS e linguagens de script como JavaScript.",
+    descriptionEn:
+      " HTML is the standard markup language for documents designed to be displayed in a web browser. It can be aided by technologies such as CSS style sheets and script languages such as JavaScript.",
     path: FaHtml5(),
   },
   {
@@ -103,6 +119,8 @@ export const skills = [
     name: "css",
     description:
       "CSS é uma linguagem de estilo usada para descrever a apresentação de um documento escrito em HTML ou XML, incluindo cores, layout e fontes. Ele permite a adaptação do layout para diferentes tipos de dispositivos, como impressoras ou telas.",
+    descriptionEn:
+      " CSS is a style language used to describe the presentation of a document written in HTML or XML, including colors, layout, and fonts. It allows the layout to be adapted for different types of devices, such as printers or screens.",
     path: FaCss3(),
   },
   {
@@ -110,6 +128,8 @@ export const skills = [
     name: "tailwind",
     description:
       "Tailwind CSS é um framework CSS que permite a criação de designs personalizados sem sair do HTML. Ele fornece classes utilitárias para ajudar a criar designs complexos de maneira rápida e fácil.",
+    descriptionEn:
+      " Tailwind CSS is a CSS framework that allows you to create custom designs without leaving HTML. It provides utility classes to help create complex designs quickly and easily.",
     path: RiTailwindCssFill(),
   },
   {
@@ -117,6 +137,8 @@ export const skills = [
     name: "redux",
     description:
       "Redux é uma biblioteca de gerenciamento de estado para aplicativos JavaScript. Ele ajuda a escrever aplicativos que se comportam consistentemente, executados em diferentes ambientes (cliente, servidor e nativo) e são fáceis de testar.",
+    descriptionEn:
+      " Redux is a state management library for JavaScript applications. It helps write applications that behave consistently, run in different environments (client, server, and native), and are easy to test.",
     path: SiRedux(),
   },
   {
@@ -124,6 +146,8 @@ export const skills = [
     name: "rtl",
     description:
       "RTL é uma biblioteca de testes para React que permite testar componentes de forma isolada, simulando interações do usuário e verificando o resultado.",
+    descriptionEn:
+      " RTL is a testing library for React that allows you to test components in isolation, simulating user interactions and checking the result.",
     path: SiTestinglibrary(),
   },
   {
@@ -131,6 +155,8 @@ export const skills = [
     name: "sql",
     description:
       "SQL é uma linguagem de programação usada para se comunicar com bancos de dados. Ele fornece uma maneira de manipular e consultar dados armazenados em um banco de dados relacional.",
+    descriptionEn:
+      " SQL is a programming language used to communicate with databases. It provides a way to manipulate and query data stored in a relational database.",
     path: AiOutlineConsoleSql(),
   },
   {
@@ -138,6 +164,8 @@ export const skills = [
     name: "express",
     description:
       "Express é um framework de aplicativo da web para Node.js. Ele é projetado para criar aplicativos da web e APIs.",
+    descriptionEn:
+      " Express is a web application framework for Node.js. It is designed to create web applications and APIs.",
     path: SiExpress(),
   },
   {
@@ -145,6 +173,8 @@ export const skills = [
     name: "docker",
     description:
       "Docker é uma plataforma de código aberto para desenvolver, enviar e executar aplicativos. Ele permite que você separe seus aplicativos de sua infraestrutura para que você possa entregar software rapidamente.",
+    descriptionEn:
+      " Docker is an open-source platform for developing, shipping, and running applications. It allows you to separate your applications from your infrastructure so you can deliver software quickly.",
     path: FaDocker(),
   },
   {
@@ -152,6 +182,8 @@ export const skills = [
     name: "jest",
     description:
       "Jest é um framework de teste de JavaScript mantido pelo Facebook. Ele é amplamente utilizado para testar aplicativos React e Node.js.",
+    descriptionEn:
+      " Jest is a JavaScript testing framework maintained by Facebook. It is widely used to test React and Node.js applications.",
     path: SiJest(),
   },
   {
@@ -159,6 +191,8 @@ export const skills = [
     name: "mysql",
     description:
       "MySQL é um sistema de gerenciamento de banco de dados relacional de código aberto. Ele é amplamente utilizado em aplicativos da web para armazenar e recuperar dados.",
+    descriptionEn:
+      " MySQL is an open-source relational database management system. It is widely used in web applications to store and retrieve data.",
     path: SiMysql(),
   },
   {
@@ -166,6 +200,8 @@ export const skills = [
     name: "git",
     description:
       "Git é um sistema de controle de versão distribuído de código aberto. Ele é amplamente utilizado para rastrear alterações no código fonte durante o desenvolvimento de software.",
+    descriptionEn:
+      " Git is an open-source distributed version control system. It is widely used to track changes in source code during software development.",
     path: FaGitAlt(),
   },
   {
@@ -173,6 +209,8 @@ export const skills = [
     name: "github",
     description:
       "GitHub é uma plataforma de hospedagem de código-fonte baseada em Git. Ele é amplamente utilizado para colaboração em código fonte e gerenciamento de projetos de software.",
+    descriptionEn:
+      " GitHub is a Git-based source code hosting platform. It is widely used for source code collaboration and software project management.",
     path: FaGithub(),
   },
   {
@@ -180,6 +218,8 @@ export const skills = [
     name: "spring",
     description:
       "Spring é um framework de aplicativo Java de código aberto. Ele é amplamente utilizado para criar aplicativos corporativos Java.",
+    descriptionEn:
+      " Spring is an open-source Java application framework. It is widely used to create Java enterprise applications.",
     path: BiLogoSpringBoot(),
   },
 ];
@@ -196,24 +236,24 @@ export const imagesProject = [
     github: "https://github.com/LucasDiello/React-Restaurant",
   },
   {
-    id:2,
+    id: 2,
     name: "LM Digital",
     image: lmDigital,
     imageMobile: lmDigitalMobile,
     description:
-    "Projeto desenvolvido para cliente do mercado digital, com o intuito de criar um site de vendas de infoprodutos, com uma inteface agradável e responsiva.",
+      "Projeto desenvolvido para cliente do mercado digital, com o intuito de criar um site de vendas de infoprodutos, com uma inteface agradável e responsiva.",
     project: "https://lmdigital.netlify.app/",
     github: "https://github.com/LucasDiello/site-venda",
   },
   {
-    id:3,
-    name:"Mecânica",
+    id: 3,
+    name: "Mecânica",
     image: ldmechanicsPerfil,
     imageMobile: ldmechanicsMobile,
     description:
       "Projeto desenvolvido em React, com o intuito de criar um site de mecânica, com uma inteface agradável e responsiva, para que o usuário possa ver os serviços, fazer orçamentos, e ver informações sobre a mecânica.",
     project: "https://ldmechanics.netlify.app/",
-    github: "https://github.com/LucasDiello/mechanics_landing_page"
+    github: "https://github.com/LucasDiello/mechanics_landing_page",
   },
   {
     id: 4,

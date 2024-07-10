@@ -10,9 +10,7 @@ import BackEnd from "./routes/BackEnd.jsx";
 import Contact from "./routes/Contact.jsx";
 import Footer from "./routes/Footer.jsx";
 import { AnimatePresence } from "framer-motion";
-import transition from "./transition.jsx";
-
-const transitionHeader = transition(Header);
+import './lib/i18n.js'
 
 const router = createBrowserRouter([
   {

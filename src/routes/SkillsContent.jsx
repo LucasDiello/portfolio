@@ -1,19 +1,24 @@
 import React, { useState } from "react";
-import { skills } from "../utils"
+import { skills } from "../lib/utils"
+import { useTranslation } from "react-i18next";
 
 const SkillsContent = () => {
-    const [skillDescription, setSkillDescription] = useState("Passe o mouse por cima de alguma habilidade");
-  
+    const { t, i18n : { language} } = useTranslation();
+    const [skillDescription, setSkillDescription] = useState("");
     const handleMouseOver = (skillName) => {
       const foundSkill = skills.find((skill) => skill.name === skillName);
+      console.log(language)
       if (foundSkill) {
-        setSkillDescription(foundSkill.description);
+        setSkillDescription(
+          language === "en" ? foundSkill.descriptionEn : foundSkill.description
+        );
       } else {
         setSkillDescription("Descrição não encontrada");
       }
     };
-  
+    
     return (
+      
       <section className="content-skills">
         <div className="list-skills">
           <div className="abilities-using">
@@ -22,7 +27,7 @@ const SkillsContent = () => {
           <div className="list-content">
             {skills.map((skill) => (
               <div key={skill.id} onMouseOver={() => handleMouseOver(skill.name)} onMouseLeave={() => {
-                setSkillDescription("Passe o mouse por cima de alguma habilidade");
+                setSkillDescription(t('mouse-hover'));
               }}>
                 <span className="hidd show">
                   <i>

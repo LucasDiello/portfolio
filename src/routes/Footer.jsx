@@ -1,10 +1,11 @@
 import React from "react";
 import "../styles/footer.css";
 import { useNavigate } from "react-router";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const navigate = useNavigate();
-
+  const { t } = useTranslation();
   const scrollTo = (route) => {
     navigate(route);
     window.scrollTo({
@@ -17,7 +18,7 @@ const Footer = () => {
     <footer className="footer-container">
       <div className="powered-by">
         <h1>
-          Criado por <p>Lucas Diello</p>
+          {t("created")} <p>{t("by")}</p>
         </h1>
         <ul>
           <li>
@@ -25,7 +26,7 @@ const Footer = () => {
               onClick={() => scrollTo("/")}
               className="hover:text-red-800 hover:cursor-pointer"
             >
-              Início
+              {t("init")}
             </button>
           </li>
           <li>
@@ -33,16 +34,14 @@ const Footer = () => {
               onClick={() => scrollTo("/projects")}
               className="hover:text-red-800 hover:cursor-pointer"
             >
-              Projetos
+              {t("projects")}
             </button>
           </li>
         </ul>
       </div>
       <div className="contact-me items-center">
         <p className="hidden lg:block">
-          Caso você esteja interessado após visualizar o meu portfólio e deseja
-          entrar em contato, fico extremamente empolgado em saber que o meu
-          trabalho despertou o seu interesse.
+          {t("interest")}
           <span className="text-[#93b0c6] font-bold">Contate-me!</span>
         </p>
         <ul className="lg:space-x-16 flex justify-center">
@@ -90,7 +89,7 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-        <p className="lg:block hidden">Copyright © 2023 lucasDiello.netlify</p>
+        <p className="lg:block hidden">Copyright © 2023 www.lucasdiello.com</p>
       </div>
     </footer>
   );

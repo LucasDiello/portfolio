@@ -4,9 +4,11 @@ import projectMusics from "../assets/project-musics-d7e31baf.jpeg";
 import projectWallet from "../assets/projectWallet-4912858c.jpeg";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const ProjectsContent = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const scrollTo = () => {
     navigate("/projects");
@@ -55,7 +57,7 @@ const ProjectsContent = () => {
           className="about-project z-50 glow-on-hover font-sans"
           onClick={scrollTo}
         >
-          Mais Sobre
+          {t("more-info")}
         </button>
       </div>
     </section>
