@@ -13,7 +13,7 @@ function About() {
         <h2 className="heading-5-a">{t("title-about")}</h2>
         <div className="about-me-text">
           <p className="para-5-a leading-5">
-            {t("text-about")}
+            {t("text-about")} <br />
             <Link to="contact" spy={true} smooth={true} offset={-70} duration={1000} href="#"
              className="bg-inherit hover:cursor-pointer  font-bold text-base text-[#93b0c6] ml-2 border-none">
               {t("title-contact")}
