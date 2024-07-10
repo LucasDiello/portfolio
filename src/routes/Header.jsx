@@ -7,8 +7,11 @@ import "../styles/slider.css";
 import { useNavigate } from "react-router";
 import { Link } from "react-scroll";
 import transition from "../transition";
+import LanguageSwitcher from "./SwitcherLanguage";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+  const { t, i18n : {language} } = useTranslation();
   const [itemActive, setItemActive] = useState(0);
   const countItem = imagesProject.length;
   const navigate = useNavigate();
@@ -29,6 +32,7 @@ const Header = () => {
   return (
     <section className="">
       <header className="text-[#eee] text-sm lg:text-base container mx-auto flex justify-between items-center font-sans z-50">
+        <LanguageSwitcher />
         <button
           onClick={() => navigate("/")}
           className="logo font-bold text-4xl hover:text-red-800 hover:cursor-pointer text-white border-none bg-inherit"
@@ -40,7 +44,7 @@ const Header = () => {
             className="cursor-pointer hover:text-red-800"
             onClick={() => navigate("/")}
           >
-            Início
+            {t("init")}
           </li>
           <li className="cursor-pointer hover:text-red-800">
             <Link
@@ -61,7 +65,7 @@ const Header = () => {
               offset={-70}
               duration={1000}
             >
-              Contate-me
+              {t("title-contact3")}
             </Link>
           </li>
         </ul>
@@ -81,14 +85,14 @@ const Header = () => {
                   {image.name}
                 </h2>
                 <p className="text-gray-200 lg:text-base lg:ml-2 text-sm lg:w-[600px]">
-                  {image.description}
+                  {language === "en" ? image.descriptionEn : image.description}
                 </p>
                 <div className="space-x-4 lg:ml-[7px]">
                   <a href={image.project} target="_blank" className="cursor-pointer text-white tracking-[2px] link-customizado  font-bold hover:text-red-800">
-                    Ver projeto
+                  {t("view-project")}
                   </a>
                   <a href={image.github} target="_blank" className="cursor-pointer text-white tracking-[2px] link-customizado  font-bold hover:text-red-800">
-                    Ver código
+                  {t("view-code")}
                   </a>
                 </div>
               </div>

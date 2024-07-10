@@ -10,6 +10,7 @@
     "title-habilities": "Habilities",
     "mouse-hover": "Hover over some skill",
     "title-contact2": "Contact",
+    "title-contact3": "Contact-me",
     "get-in-touch": "Get in touch",
     "text-contact2": "If you want to contact me send me an email",
     "title-testimonials": "Informations",
@@ -21,6 +22,7 @@
     "init": "Init",
     "projects": "Projects",
     "interest": "If you are interested after viewing my portfolio and want to get in touch, I'm extremely excited to know that my work piqued his interest.",
-    "asd":""
+    "view-project":"View Project",
+    "view-code": "View code"
 }
 }

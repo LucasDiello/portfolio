@@ -231,8 +231,9 @@ export const imagesProject = [
     image: restaurantPerfil,
     imageMobile: restaurantMobile,
     description:
-      "Projeto desenvolvido em React, com o intuito de criar um site de restaurante, com uma inteface agradável e responsiva, para que o usuário possa ver o cardápio, fazer reservas, e ver informações sobre o restaurante.",
-    project: "https://restaurantborcelle.netlify.app/",
+      "Projeto desenvolvido em React, com o intuito de criar uma aplicação de um restaurante, com uma inteface agradável, para que o usuário possa conhecer o ambiente, o cardápio, fazer reservas, e ver informações sobre o restaurante.",
+    descriptionEn:"Project developed in React, with the aim of creating a restaurant application, with a pleasant interface, so that the user can get to know the environment, the menu, make reservations, and see information about the restaurant.",
+      project: "https://restaurantborcelle.netlify.app/",
     github: "https://github.com/LucasDiello/React-Restaurant",
   },
   {
@@ -241,8 +242,9 @@ export const imagesProject = [
     image: lmDigital,
     imageMobile: lmDigitalMobile,
     description:
-      "Projeto desenvolvido para cliente do mercado digital, com o intuito de criar um site de vendas de infoprodutos, com uma inteface agradável e responsiva.",
-    project: "https://lmdigital.netlify.app/",
+      "Projeto desenvolvido para cliente do mercado digital, com o intuito de criar um site de vendas de infoprodutos, com textos planejados para chamar a atenção do usuário.",
+    descriptionEn:" Project developed for a digital market client, with the aim of creating a site for selling infoproducts, with texts planned to catch the user's attention.",
+      project: "https://lmdigital.netlify.app/",
     github: "https://github.com/LucasDiello/site-venda",
   },
   {
@@ -251,8 +253,9 @@ export const imagesProject = [
     image: ldmechanicsPerfil,
     imageMobile: ldmechanicsMobile,
     description:
-      "Projeto desenvolvido em React, com o intuito de criar um site de mecânica, com uma inteface agradável e responsiva, para que o usuário possa ver os serviços, fazer orçamentos, e ver informações sobre a mecânica.",
-    project: "https://ldmechanics.netlify.app/",
+      "Projeto desenvolvido em React, com o intuito de criar um site de mecânica, para que o usuário possa ver os serviços, fazer orçamentos, e ver informações sobre a mecânica.",
+    descriptionEn:" Project developed in React, with the aim of creating a mechanic site, with a pleasant and responsive interface, so that the user can see the services, make quotes, and see information about the mechanic.",
+      project: "https://ldmechanics.netlify.app/",
     github: "https://github.com/LucasDiello/mechanics_landing_page",
   },
   {
@@ -261,8 +264,9 @@ export const imagesProject = [
     image: ldTechPerfil,
     imageMobile: ldTechMobile,
     description:
-      "Projeto desenvolvido em Next.js, com o objetivo de criar 1 e-commerce, com sistema de login, cadastro, carrinho de compras, e sistema de pagamento. Utilizando Stripe para pagamentos.",
-    project: "https://ldtech.netlify.app/",
+      "Projeto desenvolvido em Next.js, com o objetivo de criar 1 e-commerce, com sistema de login, cadastro, carrinho de compras, e sistema de pagamento. Utilizando gateway Stripe para pagamentos.",
+    descriptionEn:" Project developed in Next.js, with the aim of creating an e-commerce, with login system, registration, shopping cart, and payment system. Using gateway Stripe for payments.",
+      project: "https://ldtech.netlify.app/",
     github: "https://github.com/LucasDiello/Next-js-Ecommerce",
   },
   {
@@ -271,8 +275,9 @@ export const imagesProject = [
     image: supabasePerfil,
     imageMobile: supabaseMobile,
     description:
-      "Projeto em desenvolvimento sendo feito com Next.js, Supabase, shadcn UI, com objetivo de práticar e aprender sobre Next.js e Supabase, além de ser um projeto que visa ajudar pessoas a restaurar imagens antigas.",
-    project: "https://restoredimage.netlify.app/",
+      "Projeto em desenvolvimento sendo feito com Next.js, Supabase, shadcn UI, com objetivo de práticar e aprender sobre Supabase, além de ser um projeto que visa transformar imagens para 1 meio futurista.",
+    descriptionEn:" Project in development being done with Next.js, Supabase, shadcn UI, with the aim of practicing and learning about Supabase, as well as being a project that aims to transform images into a futuristic medium.",
+      project: "https://restoredimage.netlify.app/",
     github: "https://github.com/LucasDiello/Next-js-Supabase",
   },
   {
@@ -282,7 +287,8 @@ export const imagesProject = [
     imageMobile: recipesPerfil,
     description:
       "Este projeto foi criado em 1 conjunto de devs, com o objetivo de criar um aplicativo de receitas, onde é possível ver, filtrar e favoritar receitas, além de poder criar, editar e deletar receitas. Caso queira ver mais sobre o projeto, acesse o link do github. ou o link do projeto.",
-    project: "https://recipe-app-g6.vercel.app/",
+    descriptionEn:" This project was created in a group of devs, with the aim of creating a recipe app, where you can view, filter and favorite recipes, as well as create, edit and delete recipes. If you want to see more about the project, access the github link. or the project link.",
+      project: "https://recipe-app-g6.vercel.app/",
     github: "https://github.com/LucasDiello/app-recipes",
   },
   {
@@ -292,7 +298,8 @@ export const imagesProject = [
     imageMobile: byteBuyMobile,
     description:
       "Uma plataforma e-commerce. Criado com uma abordagem centrada no cliente e na usabilidade, o sistema permite que os clientes comprem produtos e serviços, adicione ou remova itens do carrinho, entre outras funcionalidades.",
-    project: "https://bytebuy.netlify.app/",
+    descriptionEn:" An e-commerce platform. Created with a customer-centric and usability approach, the system allows customers to purchase products and services, add or remove items from the cart, among other features.",
+      project: "https://bytebuy.netlify.app/",
     github: "https://github.com/LucasDiello/E-commerce",
   },
   {
@@ -302,7 +309,8 @@ export const imagesProject = [
     imageMobile: starwarsMobile,
     description:
       "Este foi um dos meus primeiros projetos que fiz utilizando react, o objetivo era criar uma aplicação que consumisse uma API e retornasse os dados em uma tabela, além disso, deveria ser possível filtrar os dados e ordená-los.",
-    project: "https://starorigin.netlify.app/",
+    descriptionEn:" This was one of my first projects that I did using react, the goal was to create an application that consumed an API and returned the data in a table, in addition, it should be possible to filter the data and sort it.",
+      project: "https://starorigin.netlify.app/",
     github: "https://github.com/LucasDiello/starwars-planets-search",
   },
   {
@@ -312,7 +320,8 @@ export const imagesProject = [
     imageMobile: solarsystemPerfil,
     description:
       "Este foi um dos meus primeiros projetos que fiz utilizando react, o objetivo era criar uma aplicação que consumisse uma API e retornasse os dados em uma tabela.",
-    project: "https://solarssystem.netlify.app/",
+    descriptionEn:" This was one of my first projects that I did using react, the goal was to create an application that consumed an API and returned the data in a table.",
+      project: "https://solarssystem.netlify.app/",
     github: "https://github.com/LucasDiello/solar-system-lucas",
   },
   {
@@ -322,7 +331,8 @@ export const imagesProject = [
     imageMobile: walletPerfil,
     description:
       "Projeto utilizando Redux, com o objetivo de criar uma carteira de controle de gastos, onde é possível adicionar, remover e editar gastos, além de poder ver o total de gastos e o total de gastos por categoria.",
-    project: "https://walletisapp.netlify.app/",
+    descriptionEn:" Project using Redux, with the aim of creating a wallet for expense control, where it is possible to add, remove and edit expenses, in addition to being able to see the total expenses and the total expenses by category",
+      project: "https://walletisapp.netlify.app/",
     github: "https://github.com/LucasDiello/wallet-app",
   },
   {
@@ -332,7 +342,53 @@ export const imagesProject = [
     imageMobile: triviaPerfil,
     description:
       "Projeto utilizando Redux, desenvolvido por 1 equipe de devs com o objetivo de criar um jogo de perguntas e respostas, onde o jogador deve responder 5 perguntas, cada pergunta vale 1 ponto, e o jogador deve acertar pelo menos 3 perguntas para ganhar o jogo.",
-    project: "https://app-trivia-game.netlify.app/",
+    descriptionEn:"Project using Redux, developed by a team of devs with the aim of creating a quiz game, where the player must answer 5 questions, each question is worth 1 point, and the player must answer at least 3 questions to win the game.",
+      project: "https://app-trivia-game.netlify.app/",
     github: "https://github.com/LucasDiello/trivia-redux-app",
   },
 ];
+
+export const projectsData = [
+  {
+    "title": "D&D Game",
+    "tech": "POO",
+    "description": "API RESTful para um jogo de RPG de mesa. Utilizando o paradigma de programação orientada a objetos, foi possível criar um sistema de personagens, itens, monstros e magias.",
+    "githubLink": "https://github.com/LucasDiello/trybers-and-dragons",
+    "descriptionEn":"API RESTful for a tabletop RPG game. Using the object-oriented programming paradigm, it was possible to create a system of characters, items, monsters and spells."
+  },
+  {
+    "title": "Store Manager",
+    "tech": "CRUD",
+    "description": "Esta é uma API RESTful desenvolvida para gerenciar operações em um sistema de estoque e sales, utilizando o banco de dados MySQL para a gestão de dados.",
+    "githubLink": "https://github.com/LucasDiello/store-manager",
+    "descriptionEn":"This is a RESTful API developed to manage operations in a stock and sales system, using the MySQL database to manage data."
+  },
+  {
+    "title": "JWT SMITH",
+    "tech": "CRUD & JWT",
+    "description": "Sistema de gerenciamento de pedidos e produtos, com funcionalidades como cadastro e listagem de produtos, listagem de pedidos, login de usuários, validações de produtos e até mesmo a possibilidade de cadastro de pedidos com validação de token JWT.",
+    "githubLink": "https://github.com/LucasDiello/JWT-Smith",
+    "descriptionEn":"System for managing orders and products, with features such as product registration and listing, order listing, user login, product validations and even the possibility of order registration with JWT token validation."
+  },
+  {
+    "title": "Blog API",
+    "tech": "CRUD",
+    "description": "API RESTful para um blog, com funcionalidades como cadastro e listagem de posts, listagem de categorias, login de usuários, validação de Token JWT e até mesmo a possibilidade de cadastro de posts com validação de token JWT.",
+    "githubLink": "https://github.com/LucasDiello/blogs-api",
+    "descriptionEn":"API RESTful for a blog, with features such as post registration and listing, category listing, user login, JWT Token validation and even the possibility of post registration with JWT token validation."
+  },
+  {
+    "title": "App de Futebol",
+    "tech": "Full Stack",
+    "description": "Aplicação Full Stack para gerenciamento de jogos de futebol, com funcionalidades como cadastro e listagem de jogos, listagem d times, login de usuários, validação de Token JWT e até mesmo a possibilidade de cadastro de jogos com validação de token JWT.",
+    "githubLink": "https://github.com/LucasDiello/app-futebol-clube",
+    "descriptionEn":"Full Stack application for managing football games, with features such as game registration and listing, team listing, user login, JWT Token validation and even the possibility of game registration with JWT token validation."
+  },
+  {
+    "title": "Docker todo list",
+    "tech": "Docker",
+    "description": "  Aplicação Full Stack utilizando Docker para gerenciamento de tarefas, com funcionalidades como cadastro e listagem de tarefas...",
+    "githubLink": "https://github.com/LucasDiello/docker-todo-list",
+    "descriptionEn":"Full Stack application using Docker for task management, with features such as task registration and listing..."
+  }
+]

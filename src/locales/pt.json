@@ -10,6 +10,7 @@
     "title-habilities": "Habilidades",
     "mouse-hover": "Passe o mouse sobre alguma habilidade",
     "title-contact2": "Contato",
+    "title-contact3": "Contate-me",
     "get-in-touch": "Entre em",
     "text-contact2": "Caso queira entrar em contato comigo, envie-me um e-mail",
     "title-testimonials": "Depoimentos",
@@ -21,6 +22,7 @@
     "init": "Início",
     "projects": "Projetos",
     "interest": "Caso você esteja interessado após visualizar o meu portfólio e deseja entrar em contato, fico extremamente empolgado em saber que o meu trabalho despertou o seu interesse.",
-    "sd":""
+    "view-project":"Ver projeto",
+    "view-code": "Ver código" 
   }
 }
