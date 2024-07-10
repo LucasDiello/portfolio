@@ -39,7 +39,7 @@ const Contact = () => {
   };
   return (
     <section
-      className="lg:h-[50vh] bg-black flex justify-center items-center
+      className="lg:h-[50vh] relative bg-black flex justify-center items-center
     text-gray-200 font-sans font-thin"
       id="contact"
     >
@@ -54,7 +54,7 @@ const Contact = () => {
             {t("text-contact2")}
           </p>
           <form
-            class="flex flex-col mt-2 relative z-50 space-y-6"
+            class="flex flex-col mt-2 relative  space-y-6"
             autocomplete="on"
             onSubmit={sendEmail}
           >

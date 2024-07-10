@@ -27,3 +27,7 @@
     background-color: #0f0f0f;
     transform-origin: top;
 }
+
+.z {
+    z-index: 1000;
+}
