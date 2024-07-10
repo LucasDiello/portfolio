@@ -12,5 +12,5 @@ i18n.use(initReactI18next).init({
             ...ptTranslations
         }
     },
-    lng: 'pt-BR',
+    lng: 'pt',
 })

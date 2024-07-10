@@ -12,12 +12,14 @@ const LanguageSwitcher = () => {
       const newLanguage = currentLanguage === "pt" ? "en" : "pt";
       setCurrentLanguage(newLanguage);
       changeLanguage(newLanguage);
+      console.log(newLanguage)
     }
   
 
   return (
     <div className="z-50 bottom-10 right-10  fixed shadow-xl btn-language">
       <button type="button" className='border-none bg-inherit' aria-label="Mudar linguagem" onClick={handleChangeLanguage}>
+        {console.log(currentLanguage)}
         {
           currentLanguage === "pt" ? (
             <img src={enImage} alt
