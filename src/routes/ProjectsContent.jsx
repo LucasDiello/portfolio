@@ -3,7 +3,7 @@ import Ecommerce from "../assets/e-commerce-fa3a01a1.jpeg";
 import projectMusics from "../assets/project-musics-d7e31baf.jpeg";
 import projectWallet from "../assets/projectWallet-4912858c.jpeg";
 import { useNavigate } from "react-router";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const ProjectsContent = () => {
   const navigate = useNavigate();
@@ -19,7 +19,7 @@ const ProjectsContent = () => {
   return (
     <section className="project-content">
       <div className="links-project">
-        <a
+        <Link
           className="hidd show cursor-pointer"
           onClick={scrollTo}
           href="/projects"
@@ -28,8 +28,8 @@ const ProjectsContent = () => {
         "
         >
           <img src={Ecommerce} alt="" />
-        </a>
-        <a
+        </Link>
+        <Link
           className="hidd show cursor-pointer"
           onClick={scrollTo}
           href="/projects"
@@ -38,8 +38,8 @@ const ProjectsContent = () => {
         "
         >
           <img src={projectMusics} alt="" />
-        </a>
-        <a
+        </Link>
+        <Link
           className="hidd show cursor-pointer"
           onClick={scrollTo}
           href="/projects"
@@ -48,7 +48,7 @@ const ProjectsContent = () => {
         "
         >
           <img src={projectWallet} alt="" />
-        </a>
+        </Link>
       </div>
       <div className="route-to-projects">
         <button
