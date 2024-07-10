@@ -1,5 +1,3 @@
-// src/components/LanguageSwitcher.js
-
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import brImage from "../images/brazil_18295.png"
@@ -18,14 +16,14 @@ const LanguageSwitcher = () => {
   
 
   return (
-    <div className="z-50 bottom-10 right-10 fixed shadow-xl">
+    <div className="z-50 bottom-10 right-10  fixed shadow-xl btn-language">
       <button type="button" className='border-none bg-inherit' aria-label="Mudar linguagem" onClick={handleChangeLanguage}>
         {
           currentLanguage === "pt" ? (
             <img src={enImage} alt
-            ="English" className="w-14 h-1w-14 cursor-pointer"/>
+            ="English" className="w-14 h-14 cursor-pointer"/>
           ) : (
-            <img src={brImage} alt="Português" className="w-14 h-1w-14 cursor-pointer"/>
+            <img src={brImage} alt="Português" className="w-14 h-14 cursor-pointer"/>
           )
         }
       </button>
