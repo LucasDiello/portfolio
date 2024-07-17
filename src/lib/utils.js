@@ -227,39 +227,17 @@ export const skills = [
 export const imagesProject = [
   {
     id: 1,
-    name: "Restaurant Borcelle",
-    image: restaurantPerfil,
-    imageMobile: restaurantMobile,
-    description:
-      "Projeto desenvolvido em React, com o intuito de criar uma aplicação de um restaurante, com uma inteface agradável, para que o usuário possa conhecer o ambiente, o cardápio, fazer reservas, e ver informações sobre o restaurante.",
-    descriptionEn:"Project developed in React, with the aim of creating a restaurant application, with a pleasant interface, so that the user can get to know the environment, the menu, make reservations, and see information about the restaurant.",
-      project: "https://restaurantborcelle.netlify.app/",
-    github: "https://github.com/LucasDiello/React-Restaurant",
-  },
-  {
-    id: 2,
-    name: "LM Digital",
-    image: lmDigital,
-    imageMobile: lmDigitalMobile,
-    description:
-      "Projeto desenvolvido para cliente do mercado digital, com o intuito de criar um site de vendas de infoprodutos, com textos planejados para chamar a atenção do usuário.",
-    descriptionEn:" Project developed for a digital market client, with the aim of creating a site for selling infoproducts, with texts planned to catch the user's attention.",
-      project: "https://lmdigital.netlify.app/",
-    github: "https://github.com/LucasDiello/site-venda",
-  },
-  {
-    id: 3,
     name: "Mecânica",
     image: ldmechanicsPerfil,
     imageMobile: ldmechanicsMobile,
     description:
       "Projeto desenvolvido em React, com o intuito de criar um site de mecânica, para que o usuário possa ver os serviços, fazer orçamentos, e ver informações sobre a mecânica.",
     descriptionEn:" Project developed in React, with the aim of creating a mechanic site, with a pleasant and responsive interface, so that the user can see the services, make quotes, and see information about the mechanic.",
-      project: "https://ldmechanics.netlify.app/",
+    project: "https://ldmechanics.netlify.app/",
     github: "https://github.com/LucasDiello/mechanics_landing_page",
   },
   {
-    id: 4,
+    id: 2,
     name: "LD Tech",
     image: ldTechPerfil,
     imageMobile: ldTechMobile,
@@ -270,15 +248,37 @@ export const imagesProject = [
     github: "https://github.com/LucasDiello/Next-js-Ecommerce",
   },
   {
-    id: 5,
+    id: 3,
+    name: "Restaurant Borcelle",
+    image: restaurantPerfil,
+    imageMobile: restaurantMobile,
+    description:
+      "Projeto desenvolvido em React, com o intuito de criar uma aplicação de um restaurante, com uma inteface agradável, para que o usuário possa conhecer o ambiente, o cardápio, fazer reservas, e ver informações sobre o restaurante.",
+    descriptionEn:"Project developed in React, with the aim of creating a restaurant application, with a pleasant interface, so that the user can get to know the environment, the menu, make reservations, and see information about the restaurant.",
+      project: "https://restaurantborcelle.netlify.app/",
+    github: "https://github.com/LucasDiello/React-Restaurant",
+  },
+  {
+    id: 4,
     name: "Supabase",
     image: supabasePerfil,
     imageMobile: supabaseMobile,
     description:
       "Projeto em desenvolvimento sendo feito com Next.js, Supabase, shadcn UI, com objetivo de práticar e aprender sobre Supabase, além de ser um projeto que visa transformar imagens para 1 meio futurista.",
     descriptionEn:" Project in development being done with Next.js, Supabase, shadcn UI, with the aim of practicing and learning about Supabase, as well as being a project that aims to transform images into a futuristic medium.",
-      project: "https://restoredimage.netlify.app/",
+      project: "https://futureimage.vercel.app/",
     github: "https://github.com/LucasDiello/Next-js-Supabase",
+  },
+  {
+    id: 5,
+    name: "LM Digital",
+    image: lmDigital,
+    imageMobile: lmDigitalMobile,
+    description:
+      "Projeto desenvolvido para cliente do mercado digital, com o intuito de criar um site de vendas de infoprodutos, com textos planejados para chamar a atenção do usuário.",
+    descriptionEn:" Project developed for a digital market client, with the aim of creating a site for selling infoproducts, with texts planned to catch the user's attention.",
+      project: "https://lmdigital.netlify.app/",
+    github: "https://github.com/LucasDiello/site-venda",
   },
   {
     id: 6,
