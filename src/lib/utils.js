@@ -41,6 +41,8 @@ import byteBuyMobile from "../assets/bytebuyProject.png";
 import starwarsMobile from "../assets/starwarsProject.png";
 import lmDigitalMobile from "../assets/lmDigitalProject.png";
 import ldmechanicsMobile from "../assets/ldmechanicsProject.png";
+import lucasBarbaPerfil from "../images/barber1.png";
+
 export const skills = [
   {
     id: 1,
@@ -270,7 +272,17 @@ export const imagesProject = [
     github: "https://github.com/LucasDiello/Next-js-Supabase",
   },
   {
-    id: 5,
+    id:5,
+    name: "Barbearia",
+    image: lucasBarbaPerfil,
+    imageMobile: lucasBarbaPerfil,
+    description: "Projeto desenvolvido em React, com o intuito de criar um site de barbearia, com uma interface agradável, para que o usuário possa conhecer o ambiente, os serviços, fazer agendamentos, e ver informações sobre a barbearia.",
+    descriptionEn:"Project developed in React, with the aim of creating a barber shop website, with a pleasant interface, so that the user can get to know the environment, the services, make appointments, and see information about the barber shop.",
+    project: "https://lucasbarba.netlify.app/",
+    github: "https://github.com/LucasDiello/barber-shop",
+  },
+  {
+    id: 6,
     name: "LM Digital",
     image: lmDigital,
     imageMobile: lmDigitalMobile,
@@ -281,7 +293,7 @@ export const imagesProject = [
     github: "https://github.com/LucasDiello/site-venda",
   },
   {
-    id: 6,
+    id: 7,
     name: "Recipes App",
     image: recipesPerfil,
     imageMobile: recipesPerfil,
@@ -292,7 +304,7 @@ export const imagesProject = [
     github: "https://github.com/LucasDiello/app-recipes",
   },
   {
-    id: 7,
+    id: 8,
     name: "ByteBuy",
     image: byteBuyPerfil,
     imageMobile: byteBuyMobile,
@@ -303,7 +315,7 @@ export const imagesProject = [
     github: "https://github.com/LucasDiello/E-commerce",
   },
   {
-    id: 8,
+    id: 9,
     name: "Star Wars",
     image: starwarsPerfil,
     imageMobile: starwarsMobile,
@@ -312,17 +324,6 @@ export const imagesProject = [
     descriptionEn:" This was one of my first projects that I did using react, the goal was to create an application that consumed an API and returned the data in a table, in addition, it should be possible to filter the data and sort it.",
       project: "https://starorigin.netlify.app/",
     github: "https://github.com/LucasDiello/starwars-planets-search",
-  },
-  {
-    id: 9,
-    name: "Solar System",
-    image: solarsystemPerfil,
-    imageMobile: solarsystemPerfil,
-    description:
-      "Este foi um dos meus primeiros projetos que fiz utilizando react, o objetivo era criar uma aplicação que consumisse uma API e retornasse os dados em uma tabela.",
-    descriptionEn:" This was one of my first projects that I did using react, the goal was to create an application that consumed an API and returned the data in a table.",
-      project: "https://solarssystem.netlify.app/",
-    github: "https://github.com/LucasDiello/solar-system-lucas",
   },
   {
     id: 10,
