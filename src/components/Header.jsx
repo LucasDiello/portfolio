@@ -9,9 +9,15 @@ import { Link } from "react-scroll";
 import transition from "../transition";
 import LanguageSwitcher from "./SwitcherLanguage";
 import { useTranslation } from "react-i18next";
-
+import ButtonProject from "./ButtonProject";
+import { DiGithubAlt } from 'react-icons/di'
+import { TbWorldCancel } from 'react-icons/tb'
+import "../styles/animation.css"
 const Header = () => {
-  const { t, i18n : {language} } = useTranslation();
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
   const [itemActive, setItemActive] = useState(0);
   const countItem = imagesProject.length;
   const navigate = useNavigate();
@@ -31,46 +37,6 @@ const Header = () => {
 
   return (
     <section className="">
-      <header className="text-[#eee] text-sm lg:text-base container mx-auto flex justify-between items-center font-sans z-50">
-        <LanguageSwitcher />
-        <button
-          onClick={() => navigate("/")}
-          className="logo font-bold text-4xl hover:text-red-800 hover:cursor-pointer text-white border-none bg-inherit"
-        >
-          LD
-        </button>
-        <ul className="flex space-x-10 sm:gap-3 list-none font-bold">
-          <li
-            className="cursor-pointer hover:text-red-800"
-            onClick={() => navigate("/")}
-          >
-            {t("init")}
-          </li>
-          <li className="cursor-pointer hover:text-red-800">
-            <Link
-              to="backend"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={1000}
-            >
-              Back end
-            </Link>
-          </li>
-          <li className="hover:cursor-pointer hover:text-red-800">
-            <Link
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={1000}
-            >
-              {t("title-contact3")}
-            </Link>
-          </li>
-        </ul>
-      </header>
-
       <div className="slider">
         <div className="list">
           {imagesProject.map((image, index) => (
@@ -79,7 +45,7 @@ const Header = () => {
               key={index}
             >
               <img src={image.image} alt={image.name} />
-              <div className="content p-4 font-sans lg:!left-[10%]  top-[12%]">
+              <div className="content p-4 font-sans lg:!left-[10%]  top-[12%] hidd show">
                 <p className="lg:ml-[5px]">design</p>
                 <h2 className="!text-[30px] md:!text-[60px] lg:!text-7xl lg:!ml-[2px] ">
                   {image.name}
@@ -87,12 +53,16 @@ const Header = () => {
                 <p className="text-gray-200 lg:text-base lg:ml-2 text-sm lg:w-[600px]">
                   {language === "en" ? image.descriptionEn : image.description}
                 </p>
-                <div className="space-x-4 lg:ml-[7px]">
-                  <a href={image.project} target="_blank" className="cursor-pointer text-white tracking-[2px] link-customizado  font-bold hover:text-red-800">
-                  {t("view-project")}
+                <div className="flex space-x-4 lg:ml-[7px]">
+                  <a
+                    href={image.project}
+                    target="_blank"
+                    className="cursor-pointer text-white tracking-[2px] link-customizado  font-bold hover:text-red-800"
+                  >
+                   <ButtonProject acess={t("view-project")} text={"Acessar site"} icon={<TbWorldCancel color="black"/>} />
                   </a>
                   <a href={image.github} target="_blank" className="cursor-pointer text-white tracking-[2px] link-customizado  font-bold hover:text-red-800">
-                  {t("view-code")}
+                  <ButtonProject acess={t("view-code")} text="Visualizar código" icon={<DiGithubAlt color="black"/>}/>
                   </a>
                 </div>
               </div>

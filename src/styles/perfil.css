@@ -175,17 +175,6 @@
     ) !important;
   }
 
-  #root
-    > div
-    > section.content-skills
-    > div
-    > div.list-content
-    > div
-    > span
-    > i
-    > svg {
-    font-size: 40px !important;
-  }
 
   .arrow2-perfil {
     position: absolute;
@@ -272,4 +261,5 @@
     visibility: hidden;
     width: 0;
   }
+
 }

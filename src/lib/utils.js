@@ -229,6 +229,17 @@ export const skills = [
 export const imagesProject = [
   {
     id: 1,
+    name: "Restaurant Borcelle",
+    image: restaurantPerfil,
+    imageMobile: restaurantMobile,
+    description:
+      "Projeto desenvolvido em React, com o intuito de criar uma aplicação de um restaurante, com uma inteface agradável, para que o usuário possa conhecer o ambiente, o cardápio, fazer reservas, e ver informações sobre o restaurante.",
+    descriptionEn:"Project developed in React, with the aim of creating a restaurant application, with a pleasant interface, so that the user can get to know the environment, the menu, make reservations, and see information about the restaurant.",
+      project: "https://restaurantborcelle.netlify.app/",
+    github: "https://github.com/LucasDiello/React-Restaurant",
+  },
+  {
+    id: 2,
     name: "Mecânica",
     image: ldmechanicsPerfil,
     imageMobile: ldmechanicsMobile,
@@ -239,7 +250,7 @@ export const imagesProject = [
     github: "https://github.com/LucasDiello/mechanics_landing_page",
   },
   {
-    id: 2,
+    id: 3,
     name: "LD Tech",
     image: ldTechPerfil,
     imageMobile: ldTechMobile,
@@ -248,17 +259,6 @@ export const imagesProject = [
     descriptionEn:" Project developed in Next.js, with the aim of creating an e-commerce, with login system, registration, shopping cart, and payment system. Using gateway Stripe for payments.",
       project: "https://ldtech.netlify.app/",
     github: "https://github.com/LucasDiello/Next-js-Ecommerce",
-  },
-  {
-    id: 3,
-    name: "Restaurant Borcelle",
-    image: restaurantPerfil,
-    imageMobile: restaurantMobile,
-    description:
-      "Projeto desenvolvido em React, com o intuito de criar uma aplicação de um restaurante, com uma inteface agradável, para que o usuário possa conhecer o ambiente, o cardápio, fazer reservas, e ver informações sobre o restaurante.",
-    descriptionEn:"Project developed in React, with the aim of creating a restaurant application, with a pleasant interface, so that the user can get to know the environment, the menu, make reservations, and see information about the restaurant.",
-      project: "https://restaurantborcelle.netlify.app/",
-    github: "https://github.com/LucasDiello/React-Restaurant",
   },
   {
     id: 4,

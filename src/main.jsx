@@ -5,10 +5,10 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Header from "./routes/Header.jsx";
-import BackEnd from "./routes/BackEnd.jsx";
-import Contact from "./routes/Contact.jsx";
-import Footer from "./routes/Footer.jsx";
+import Header from "./components/Header.jsx";
+import BackEnd from "./components/BackEnd.jsx";
+import Contact from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
 import { AnimatePresence } from "framer-motion";
 import './lib/i18n.js'
 

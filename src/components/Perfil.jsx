@@ -11,9 +11,6 @@ const Perfil = () => {
 
   return (
     <section className="container-perfil">
-      <div className="absolute z-50 top-0 right-0">
-        <LanguageSwitcher />
-      </div>
       <div className="image-perfil"></div>
       <div className="arrow-perfil"></div>
       <div className="arrow2-perfil"></div>

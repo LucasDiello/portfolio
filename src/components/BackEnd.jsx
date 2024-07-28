@@ -4,12 +4,12 @@ import { RenderIcon } from "./RenderIcon";
 import { useTranslation } from "react-i18next";
 import { projectsData } from "../lib/utils";
 
-
 const BackEnd = () => {
   const { t, i18n : {language} } = useTranslation();
   return (
     <section className="bg-[#181818] relative" id="backend">
-      <section className="flex justify-center">
+      <div className="projects "></div>
+      <section className="flex justify-center ">
         <div className=" w-full font-sans">
           <section className="container-projects !bg-[#181818]">
             <div className="z-50">

@@ -15,7 +15,8 @@
 }
 
 .backend-content {
-    background-image: linear-gradient(to top, #000 40%, transparent 100%);
+    background-image: linear-gradient(to top, #101010 40%, transparent 100%);
+    border-bottom: 2px solid #181818;
 }
 
 .boxes {
@@ -65,4 +66,67 @@ icon {
     margin-bottom: 1.2em;
     letter-spacing: 1px;
     font-family: Lora, serif;
+}
+
+.button-icon {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+  }
+  
+  .icon-project  {
+    background-color: #fff;
+    padding: 10px 10px 5px 10px;
+  }
+  
+  .icon-project  svg {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .cube {
+    transition: all 0.4s;
+    transform-style: preserve-3d;
+    width: 150px;
+    height: 20px;
+}
+  
+  .button-icon:hover {
+    border-color: #620101;
+  }
+  
+  .button-icon:hover .cube {
+    transform: rotateX(91deg);
+  }
+  
+  .side {
+    position: absolute;
+    height: 43px;
+    width: 150px;
+    display: flex;
+    font-size: 0.8em;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+  }
+  
+  .top {
+    background: #620101;
+    color: #fff;
+    transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
+  }
+  
+  .front {
+    background: #222229;
+    color: #fff;
+    transform: translate3d(0, 0, 1em);
+  }
+
+@media screen and (max-width: 768px) {
+   .cube, .side {
+    width: 120px;
+   }
 }

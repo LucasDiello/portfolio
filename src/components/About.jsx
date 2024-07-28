@@ -16,7 +16,12 @@ function About() {
             {t("text-about")} <br />
             <Link to="contact" spy={true} smooth={true} offset={-70} duration={1000} href="#"
              className="bg-inherit hover:cursor-pointer  font-bold text-base text-[#93b0c6] ml-2 border-none">
+          <button
+          className="about-project z-50 glow-on-hover font-sans mt-10 uppercase font-[300] tracking-wider"
+          onClick={scrollTo}
+        >
               {t("title-contact")}
+        </button>
             </Link>
             <br />{" "}
           </p>

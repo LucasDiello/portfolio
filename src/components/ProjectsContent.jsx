@@ -54,7 +54,7 @@ const ProjectsContent = () => {
       </div>
       <div className="route-to-projects">
         <button
-          className="about-project z-50 glow-on-hover font-sans"
+          className="about-project z-50 glow-on-hover font-sans uppercase font-[300] tracking-wider"
           onClick={scrollTo}
         >
           {t("more-info")}
